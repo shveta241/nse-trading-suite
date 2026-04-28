@@ -841,3 +841,183 @@
 2026-04-28 18:25:51,067 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
 2026-04-28 18:25:51,170 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
 2026-04-28 18:25:51,346 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:05,850 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:26:06,404 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:06,640 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:26:06,641 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:06,754 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:06,882 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:20,843 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:26:20,962 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:21,082 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:26:21,082 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:21,199 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:21,314 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:35,847 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:26:35,965 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:36,085 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:26:36,085 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:36,191 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:36,321 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:39,016 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:26:39,131 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:39,361 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:26:39,362 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:39,500 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:39,619 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:50,845 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:26:51,071 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:51,177 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:26:51,177 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:51,321 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:26:51,434 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:05,843 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:27:06,080 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:06,197 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:27:06,197 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:06,314 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:06,430 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:20,843 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:27:20,952 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:21,068 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:27:21,068 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:21,180 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:21,298 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:35,857 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:27:35,991 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:36,133 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:27:36,133 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:36,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:36,495 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:40,017 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:27:40,132 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:40,246 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:27:40,246 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:40,356 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:40,469 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:50,857 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:27:50,985 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:51,126 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:27:51,126 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:51,246 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:27:51,365 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:05,842 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:28:05,957 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:06,071 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:28:06,071 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:06,186 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:06,298 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:20,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:28:20,975 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:21,101 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:28:21,102 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:21,227 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:21,458 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:35,850 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:28:35,963 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:36,073 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:28:36,073 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:36,413 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:36,530 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:41,018 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:28:41,131 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:41,251 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:28:41,252 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:41,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:41,622 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:50,858 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:28:51,006 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:51,244 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:28:51,244 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:51,355 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:28:51,471 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:05,854 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:29:05,987 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:06,110 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:29:06,110 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:06,239 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:06,353 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:20,845 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:29:20,984 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:21,100 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:29:21,100 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:21,222 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:21,336 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:35,852 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:29:35,982 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:36,099 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:29:36,099 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:36,216 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:36,324 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:42,016 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:29:42,138 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:42,246 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:29:42,247 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:42,371 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:42,612 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:50,853 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:29:51,087 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:51,203 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:29:51,203 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:51,321 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:29:51,430 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:05,843 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:30:06,075 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:06,199 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:30:06,199 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:06,310 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:06,425 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:20,850 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:30:20,967 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:21,083 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:30:21,090 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:21,213 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:21,334 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:35,852 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:30:36,101 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:36,266 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:30:36,266 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:36,525 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:36,651 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:43,017 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:30:43,133 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:43,246 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:30:43,247 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:43,359 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:43,467 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:50,853 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:30:51,084 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:51,316 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:30:51,316 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:51,552 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:30:51,666 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:05,861 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:31:07,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:07,209 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:31:07,210 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:07,315 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:07,425 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:20,854 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:31:20,996 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:21,123 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:31:21,123 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:21,307 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:21,459 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:35,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:31:35,981 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:36,096 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:31:36,096 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:36,268 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:36,384 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:44,017 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:31:44,169 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:44,361 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:31:44,361 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:44,472 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:44,584 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:50,852 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-23 to None
+2026-04-28 18:31:50,966 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:51,076 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
+2026-04-28 18:31:51,077 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:51,183 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-23 to None
+2026-04-28 18:31:51,291 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-23 to None
