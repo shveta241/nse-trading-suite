@@ -169,16 +169,17 @@ def get_live_signals():
             
             signals.append({
                 "symbol": symbol,
-                "price": latest['close'],
-                "vwap": latest['vwap'],
-                "rsi_14": latest['rsi_14'],
-                "ema_20": latest['ema_20'],
-                "ema_50": latest['ema_50'],
+                "price": float(latest['close']) if pd.notnull(latest['close']) else None,
+                "vwap": float(latest['vwap']) if pd.notnull(latest['vwap']) else None,
+                "rsi_14": float(latest['rsi_14']) if pd.notnull(latest['rsi_14']) else None,
+                "ema_20": float(latest['ema_20']) if pd.notnull(latest['ema_20']) else None,
+                "ema_50": float(latest['ema_50']) if pd.notnull(latest['ema_50']) else None,
                 "signal": "BUY" if sig == 1 else "SELL" if sig == -1 else "NEUTRAL",
                 "timestamp": datetime.now()
             })
             
     return signals
+
 
 @app.get("/api/analysis")
 def get_advanced_analysis(symbol: str = Query(..., description="NSE Stock Symbol")):
