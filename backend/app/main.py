@@ -274,22 +274,19 @@ def get_indicators(symbol: str, interval: str = '5m'):
     return data
 
 @app.get("/api/signals")
-def get_live_signals(expiry_mode: bool = False):
+def get_live_signals(expiry_target: Optional[str] = None):
     """
     Checks real-time signals for predefined watchlist using AI Probabilistic Scoring.
     """
     watchlist = ['^NSEI', 'RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS', 'BSE:SENSEX']
     signals = []
-    today = datetime.now().weekday()
+    
     for symbol in watchlist:
-        # Expiry mode strictly applies ONLY on the designated expiry day for each Index
+        # User explicitly chooses the target index from the UI, so we just match it
         current_expiry_mode = False
-        if expiry_mode:
-            if symbol == '^NSEI' and today == 1: # Tuesday
-                current_expiry_mode = True
-            elif symbol == 'BSE:SENSEX' and today == 3: # Thursday
-                current_expiry_mode = True
-                
+        if expiry_target and expiry_target == symbol:
+            current_expiry_mode = True
+            
         strategy = ProbabilisticEngineStrategy(expiry_mode=current_expiry_mode)
         
         start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")

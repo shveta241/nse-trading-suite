@@ -61,7 +61,7 @@ function App() {
     rsi_14: true
   });
 
-  const [expiryMode, setExpiryMode] = useState(false);
+  const [expiryTarget, setExpiryTarget] = useState('');
   const [autoTradeEnabled, setAutoTradeEnabled] = useState(false);
 
   const handleLogin = async (e) => {
@@ -90,7 +90,7 @@ function App() {
 
   const fetchLiveSignals = async () => {
     try {
-      const res = await axios.get(`${API_BASE_URL}/api/signals?expiry_mode=${expiryMode}`);
+      const res = await axios.get(`${API_BASE_URL}/api/signals?expiry_target=${expiryTarget}`);
       setLiveSignals(res.data);
     } catch (e) {
       console.error("Error fetching signals", e);
@@ -218,7 +218,7 @@ function App() {
     }, 15000);
 
     return () => clearInterval(interval);
-  }, [isAuthenticated, activeTab, selectedSymbol, expiryMode]);
+  }, [isAuthenticated, activeTab, selectedSymbol, expiryTarget]);
 
   const handleRunBacktest = async (e) => {
     e.preventDefault();
@@ -444,13 +444,17 @@ function App() {
                   onChange={(e) => setWatchlistFilter(e.target.value)} 
                 />
                 <button 
-                  className={`btn-primary ${expiryMode ? 'bg-bearish-glow' : ''}`} 
-                  style={{padding: '6px 12px', background: expiryMode ? 'var(--bearish)' : 'var(--primary)', boxShadow: 'none'}}
-                  onClick={() => setExpiryMode(!expiryMode)}
-                  title="Enable Expiry Mode for Hero-Zero Option Scalping"
+                  className={`btn-primary ${expiryTarget ? 'bg-bearish-glow' : ''}`} 
+                  style={{padding: '6px 12px', background: expiryTarget ? 'var(--bearish)' : 'var(--primary)', boxShadow: 'none'}}
+                  onClick={() => {
+                    if (!expiryTarget) setExpiryTarget('BSE:SENSEX');
+                    else if (expiryTarget === 'BSE:SENSEX') setExpiryTarget('^NSEI');
+                    else setExpiryTarget('');
+                  }}
+                  title="Cycle Expiry Mode Target"
                 >
                   <Zap size={14} style={{display: 'inline', marginRight: 4}} />
-                  {expiryMode ? 'Expiry Mode ON' : 'Expiry Mode OFF'}
+                  {expiryTarget === 'BSE:SENSEX' ? 'Expiry: SENSEX' : expiryTarget === '^NSEI' ? 'Expiry: NIFTY 50' : 'Expiry Mode OFF'}
                 </button>
                 <button 
                   className="btn-primary" 
