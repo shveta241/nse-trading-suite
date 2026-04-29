@@ -42,10 +42,15 @@ class LowCapitalManager:
         suggested_sl = option_premium * (1 - self.max_trade_risk_pct)
         suggested_target = option_premium * 1.20 # 20% target profit
         
+        # Dynamic lot sizing based on max trade risk allocation (10% to 20% of capital per trade)
+        affordable_lots = int((self.capital * 0.20) / required_capital)
+        if affordable_lots < 1:
+            affordable_lots = 1 # Always allow at least 1 lot if capital is sufficient
+            
         return {
             "viable": True,
-            "lots": 1,
-            "required_capital": required_capital,
+            "lots": affordable_lots,
+            "required_capital": required_capital * affordable_lots,
             "suggested_sl": suggested_sl,
             "suggested_target": suggested_target
         }
