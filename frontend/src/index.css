@@ -80,3 +80,33 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
 }
+
+/* Market Indices Bar */
+.market-indices-bar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 12px 24px;
+  background: rgba(15, 23, 42, 0.8);
+  border-bottom: 1px solid var(--glass-border);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.market-indices-bar::-webkit-scrollbar {
+  display: none;
+}
+.index-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.index-symbol {
+  color: var(--text-secondary);
+}
+.index-price {
+  color: var(--text-primary);
+}
+

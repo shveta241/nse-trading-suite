@@ -337,6 +337,24 @@ function App() {
         </div>
       </header>
 
+      <div className="market-indices-bar">
+        {liveSignals.length > 0 ? liveSignals.map((sig, idx) => {
+          const changePct = sig.vwap ? ((sig.price - sig.vwap) / sig.vwap * 100) : 0;
+          const isPositive = changePct >= 0;
+          return (
+            <div key={idx} className="index-item">
+              <span className="index-symbol">{sig.symbol.replace('^NSEI', 'NIFTY').replace('.NS', '').replace('BSE:', '')}</span>
+              <span className="index-price">{sig.price?.toFixed(2) || '---'}</span>
+              <span style={{ color: isPositive ? 'var(--bullish)' : 'var(--bearish)' }}>
+                {isPositive ? '+' : ''}{changePct.toFixed(2)}%
+              </span>
+            </div>
+          );
+        }) : (
+          <div className="index-item"><span className="index-symbol">Loading Market Data...</span></div>
+        )}
+      </div>
+
       {activeTab === 'live' && (
         <div className="grid-container">
           {/* Summary Cards */}
