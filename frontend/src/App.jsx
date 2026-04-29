@@ -62,6 +62,7 @@ function App() {
   });
 
   const [expiryMode, setExpiryMode] = useState(false);
+  const [autoTradeEnabled, setAutoTradeEnabled] = useState(false);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -102,6 +103,25 @@ function App() {
       setPositionsData(res.data);
     } catch (e) {
       console.error("Error fetching positions", e);
+    }
+  };
+
+  const fetchAutoTradeStatus = async () => {
+    try {
+      const res = await axios.get(`${API_BASE_URL}/api/autotrade/status`);
+      setAutoTradeEnabled(res.data.enabled);
+    } catch (e) {
+      console.error("Error fetching autotrade status", e);
+    }
+  };
+
+  const toggleAutoTrade = async () => {
+    try {
+      const res = await axios.post(`${API_BASE_URL}/api/autotrade/toggle`);
+      setAutoTradeEnabled(res.data.enabled);
+      alert(res.data.message);
+    } catch (e) {
+      alert(`Error toggling auto-trade: ${e.response?.data?.detail || e.message}`);
     }
   };
 
@@ -187,6 +207,7 @@ function App() {
     fetchIndicators(selectedSymbol);
     fetchAnalysis(selectedSymbol);
     fetchAdvancedData(selectedSymbol);
+    fetchAutoTradeStatus();
 
     const interval = setInterval(() => {
       if (activeTab === 'live' || activeTab === 'analysis') {
@@ -430,6 +451,15 @@ function App() {
                 >
                   <Zap size={14} style={{display: 'inline', marginRight: 4}} />
                   {expiryMode ? 'Expiry Mode ON' : 'Expiry Mode OFF'}
+                </button>
+                <button 
+                  className="btn-primary" 
+                  style={{padding: '6px 12px', background: autoTradeEnabled ? 'var(--bullish)' : 'transparent', border: autoTradeEnabled ? 'none' : '1px solid var(--text-muted)', boxShadow: autoTradeEnabled ? '0 0 10px rgba(16, 185, 129, 0.4)' : 'none', color: autoTradeEnabled ? '#fff' : 'var(--text-muted)'}}
+                  onClick={toggleAutoTrade}
+                  title="Enable fully autonomous algorithmic execution"
+                >
+                  <Activity size={14} style={{display: 'inline', marginRight: 4}} />
+                  {autoTradeEnabled ? 'AUTO-TRADE: ACTIVE' : 'AUTO-TRADE: OFF'}
                 </button>
                 <button className="tab-btn" onClick={fetchLiveSignals} style={{padding: 6}}>
                   <RefreshCw size={14} />

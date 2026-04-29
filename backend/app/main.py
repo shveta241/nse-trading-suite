@@ -5,6 +5,7 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime, timedelta
 import numpy as np
 import pandas as pd
+import asyncio
 
 from app.data.yfinance_client import YFinanceClient
 from app.data.mock_client import MockClient
@@ -15,6 +16,7 @@ from app.data.option_chain import OptionChainAnalyzer
 from app.data.sentiment_engine import SentimentEngine
 from app.backtester.engine import BacktestEngine
 from app.execution.mock_executor import MockExecutor
+from app.execution.low_capital_manager import LowCapitalManager
 from app.utils.logger import get_logger
 
 
@@ -35,7 +37,67 @@ app.add_middleware(
 # Shared in-memory components
 yfinance_client = YFinanceClient()
 mock_client = MockClient()
-mock_executor = MockExecutor(initial_capital=100000.0)
+mock_executor = MockExecutor(initial_capital=5000.0) # Updated for low capital user
+low_capital_manager = LowCapitalManager(initial_capital=5000.0)
+
+# Global flag for the auto-trading loop
+auto_trade_state = {"enabled": False}
+
+async def auto_trade_loop():
+    logger.info("Auto-Trade background loop initialized.")
+    watchlist = ['^NSEI', 'BSE:SENSEX']
+    
+    while True:
+        if auto_trade_state["enabled"]:
+            try:
+                today = datetime.now().weekday()
+                is_auto_expiry = today in [1, 2, 3, 4] # Any weekday can be an expiry for something, trigger hero-zero mode for scalping
+                strategy = ProbabilisticEngineStrategy(expiry_mode=is_auto_expiry)
+                
+                for symbol in watchlist:
+                    start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
+                    
+                    if "SENSEX" in symbol:
+                        df = mock_client.fetch_historical_data('^BSESN', '5m', start_date)
+                    else:
+                        df = yfinance_client.fetch_historical_data(symbol, '5m', start_date)
+                        
+                    if df.empty:
+                        df = mock_client.fetch_historical_data(symbol, '5m', start_date)
+                        
+                    if not df.empty:
+                        df_ind = IndicatorEngine.apply_indicators(df)
+                        latest = df_ind.iloc[-1].to_dict()
+                        
+                        sig = strategy.check_live_signal(latest)
+                        
+                        if sig != 0:
+                            side = "BUY" if sig == 1 else "SELL"
+                            price = latest.get('close', 100)
+                            lot_size = 15 if "SENSEX" in symbol else 50
+                            
+                            viability = low_capital_manager.check_trade_viability(price, lot_size)
+                            
+                            if viability.get('viable'):
+                                # Prevent duplicate positions in the same direction
+                                current_pos = mock_executor.positions.get(symbol, 0)
+                                if (side == "BUY" and current_pos <= 0) or (side == "SELL" and current_pos >= 0):
+                                    mock_executor.place_order(
+                                        symbol=symbol,
+                                        quantity=viability.get('lots', 1) * lot_size,
+                                        side=side,
+                                        order_type="MARKET",
+                                        price=price
+                                    )
+                                    logger.info(f"[AUTO-TRADE EXECUTED] {side} {symbol} @ {price}")
+            except Exception as e:
+                logger.error(f"Auto-trade loop error: {e}")
+                
+        await asyncio.sleep(60) # Run every 60 seconds
+
+@app.on_event("startup")
+async def startup_event():
+    asyncio.create_task(auto_trade_loop())
 
 class BacktestRequest(BaseModel):
     symbol: str
@@ -59,6 +121,15 @@ def login(request: LoginRequest):
     else:
         raise HTTPException(status_code=401, detail="Invalid username or password")
 
+
+@app.post("/api/autotrade/toggle")
+def toggle_autotrade():
+    auto_trade_state["enabled"] = not auto_trade_state["enabled"]
+    return {"status": "success", "enabled": auto_trade_state["enabled"], "message": f"Auto-trade is now {'ON' if auto_trade_state['enabled'] else 'OFF'}"}
+
+@app.get("/api/autotrade/status")
+def get_autotrade_status():
+    return {"enabled": auto_trade_state["enabled"]}
 
 @app.get("/api/quote")
 def get_quote(symbol: str = Query(..., description="NSE Stock Symbol (e.g., RELIANCE.NS)")):
