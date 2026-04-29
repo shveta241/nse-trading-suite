@@ -61,6 +61,8 @@ function App() {
     rsi_14: true
   });
 
+  const [expiryMode, setExpiryMode] = useState(false);
+
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoginError('');
@@ -87,7 +89,7 @@ function App() {
 
   const fetchLiveSignals = async () => {
     try {
-      const res = await axios.get(`${API_BASE_URL}/api/signals`);
+      const res = await axios.get(`${API_BASE_URL}/api/signals?expiry_mode=${expiryMode}`);
       setLiveSignals(res.data);
     } catch (e) {
       console.error("Error fetching signals", e);
@@ -195,7 +197,7 @@ function App() {
     }, 15000);
 
     return () => clearInterval(interval);
-  }, [isAuthenticated, activeTab, selectedSymbol]);
+  }, [isAuthenticated, activeTab, selectedSymbol, expiryMode]);
 
   const handleRunBacktest = async (e) => {
     e.preventDefault();
@@ -419,6 +421,15 @@ function App() {
                   value={watchlistFilter} 
                   onChange={(e) => setWatchlistFilter(e.target.value)} 
                 />
+                <button 
+                  className={`btn-primary ${expiryMode ? 'bg-bearish-glow' : ''}`} 
+                  style={{padding: '6px 12px', background: expiryMode ? 'var(--bearish)' : 'var(--primary)', boxShadow: 'none'}}
+                  onClick={() => setExpiryMode(!expiryMode)}
+                  title="Enable Expiry Mode for Hero-Zero Option Scalping"
+                >
+                  <Zap size={14} style={{display: 'inline', marginRight: 4}} />
+                  {expiryMode ? 'Expiry Mode ON' : 'Expiry Mode OFF'}
+                </button>
                 <button className="tab-btn" onClick={fetchLiveSignals} style={{padding: 6}}>
                   <RefreshCw size={14} />
                 </button>
