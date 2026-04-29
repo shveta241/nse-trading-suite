@@ -68,51 +68,100 @@ def get_quote(symbol: str = Query(..., description="NSE Stock Symbol (e.g., RELI
 
 @app.post("/api/backtest")
 def run_backtest(request: BacktestRequest):
-    # Fetch historical data
-    df = yfinance_client.fetch_historical_data(
-        symbol=request.symbol,
-        interval=request.interval,
-        start_date=request.start_date,
-        end_date=request.end_date
-    )
-    
-    if df.empty:
-        # Try Mock fallback
-        logger.info("Falling back to MockClient for backtest data")
-        df = mock_client.fetch_historical_data(
-            symbol=request.symbol,
-            interval=request.interval,
-            start_date=request.start_date,
-            end_date=request.end_date
-        )
+    # Determine the symbols list
+    if request.symbol.upper() in ['NIFTY50', 'ALL', 'WATCHLIST']:
+        symbols = ['RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS']
+    else:
+        symbols = [s.strip() for s in request.symbol.split(',')]
 
-    if df.empty:
-        raise HTTPException(status_code=400, detail="Could not fetch data for the requested symbol/date range.")
+    all_trades = []
+    total_pnl = 0.0
+    total_trades = 0
+    win_trades = 0
+    sharpe_ratios = []
 
-    # Calculate indicators
-    df_with_indicators = IndicatorEngine.apply_indicators(df)
-    
-    # Run Backtest
-    strategy = VwapRsiEmaStrategy()
-    engine = BacktestEngine(initial_capital=request.capital)
-    results = engine.run(strategy, df_with_indicators)
-    
-    # Clean up results to be JSON serializable (remove NaN)
-    for t in results.get('trades', []):
-        if 'exit_time' in t and isinstance(t['exit_time'], pd.Timestamp):
-            t['exit_time'] = t['exit_time'].isoformat()
+    for symbol in symbols:
+        try:
+            # Fetch historical data
+            df = yfinance_client.fetch_historical_data(
+                symbol=symbol,
+                interval=request.interval,
+                start_date=request.start_date,
+                end_date=request.end_date
+            )
             
+            if df.empty:
+                # Try Mock fallback
+                logger.info(f"Falling back to MockClient for backtest data for {symbol}")
+                df = mock_client.fetch_historical_data(
+                    symbol=symbol,
+                    interval=request.interval,
+                    start_date=request.start_date,
+                    end_date=request.end_date
+                )
+
+            if df.empty:
+                logger.warning(f"Could not fetch data for {symbol}, skipping.")
+                continue
+
+            # Calculate indicators
+            df_with_indicators = IndicatorEngine.apply_indicators(df)
+            
+            # Run Backtest
+            strategy = VwapRsiEmaStrategy()
+            engine = BacktestEngine(initial_capital=request.capital)
+            results = engine.run(strategy, df_with_indicators)
+            
+            # Enrich trades
+            for t in results.get('trades', []):
+                t['symbol'] = symbol
+                if 'exit_time' in t and isinstance(t['exit_time'], pd.Timestamp):
+                    t['exit_time'] = t['exit_time'].isoformat()
+                if 'entry_time' in t and isinstance(t['entry_time'], pd.Timestamp):
+                    t['entry_time'] = t['entry_time'].isoformat()
+                all_trades.append(t)
+                
+            total_pnl += results.get("total_pnl", 0.0)
+            total_trades += results.get("total_trades", 0)
+            
+            # Calculate win trades for this symbol
+            pnl_series = [t['pnl'] for t in results.get('trades', [])]
+            win_trades += len([p for p in pnl_series if p > 0])
+            
+            if results.get("sharpe_ratio"):
+                sharpe_ratios.append(results["sharpe_ratio"])
+                
+        except Exception as e:
+            logger.error(f"Error backtesting {symbol}: {str(e)}")
+            continue
+
+    if not all_trades and len(symbols) == 1:
+        raise HTTPException(status_code=400, detail=f"Could not fetch data or run backtest for {symbols[0]}.")
+    elif not all_trades:
+        raise HTTPException(status_code=400, detail="Could not fetch data or run backtest for any of the requested symbols.")
+
+    # Aggregate metrics
+    final_equity = request.capital + total_pnl
+    win_rate = win_trades / total_trades if total_trades > 0 else 0.0
+    avg_sharpe = sum(sharpe_ratios) / len(sharpe_ratios) if sharpe_ratios else 0.0
+
+    # Sort all trades by exit_time if available
+    try:
+        all_trades.sort(key=lambda x: x.get('exit_time', '') or '', reverse=True)
+    except Exception:
+        pass
+
     return {
         "symbol": request.symbol,
         "metrics": {
-            "initial_capital": results["initial_capital"],
-            "final_equity": results["final_equity"],
-            "total_trades": results["total_trades"],
-            "win_rate": results["win_rate"],
-            "total_pnl": results["total_pnl"],
-            "sharpe_ratio": results["sharpe_ratio"]
+            "initial_capital": request.capital,
+            "final_equity": final_equity,
+            "total_trades": total_trades,
+            "win_rate": win_rate,
+            "total_pnl": total_pnl,
+            "sharpe_ratio": avg_sharpe
         },
-        "trades": results["trades"][:100]  # limit payload
+        "trades": all_trades[:100]  # limit payload
     }
 
 @app.get("/api/indicators")

@@ -7,11 +7,13 @@ import {
 } from 'lucide-react';
 import { 
   ResponsiveContainer, LineChart, Line, XAxis, YAxis, 
-  Tooltip, Legend, CartesianGrid, AreaChart, Area 
+  Tooltip, Legend, CartesianGrid, AreaChart, Area, ComposedChart 
 } from 'recharts';
 import './App.css';
 
-const API_BASE_URL = 'https://nse-trading-suite.onrender.com';
+const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+  ? 'http://127.0.0.1:8000' 
+  : 'https://nse-trading-suite.onrender.com';
 
 function App() {
   // Auth states
@@ -22,7 +24,7 @@ function App() {
   const [loginLoading, setLoginLoading] = useState(false);
 
   // App states
-  const [activeTab, setActiveTab] = useState('live');
+  const [activeTab, setActiveTab] = useState('analysis');
   const [liveSignals, setLiveSignals] = useState([]);
   const [positionsData, setPositionsData] = useState({ capital: 100000, positions: {}, order_history: [] });
   const [indicatorsData, setIndicatorsData] = useState([]);
@@ -218,7 +220,7 @@ function App() {
             <div className="login-logo">
               <Shield size={32} className="text-primary" />
             </div>
-            <h2>Antigravity Quant Login</h2>
+            <h2>Chandra Quant Login</h2>
             <p>Access algorithmic execution gateways</p>
           </div>
           <form onSubmit={handleLogin}>
@@ -274,18 +276,18 @@ function App() {
           <div style={{display: 'flex', alignItems: 'center', gap: 12}}>
             <Brain size={32} className="text-primary" />
             <div>
-              <h1 style={{margin: 0}}>ANTIGRAVITY QUANT</h1>
+              <h1 style={{margin: 0}}>CHANDRA QUANT</h1>
               <p style={{margin: 0}}>NSE Algorithmic Trading Suite</p>
             </div>
           </div>
         </div>
         <div style={{display: 'flex', alignItems: 'center', gap: 16}}>
           <div className="tabs-nav">
-            <button className={`tab-btn ${activeTab === 'live' ? 'active' : ''}`} onClick={() => setActiveTab('live')}>
-              <Activity size={16} style={{marginRight: 6}} /> Live
-            </button>
             <button className={`tab-btn ${activeTab === 'analysis' ? 'active' : ''}`} onClick={() => setActiveTab('analysis')}>
               <Award size={16} style={{marginRight: 6}} /> Analysis
+            </button>
+            <button className={`tab-btn ${activeTab === 'live' ? 'active' : ''}`} onClick={() => setActiveTab('live')}>
+              <Activity size={16} style={{marginRight: 6}} /> Live
             </button>
             <button className={`tab-btn ${activeTab === 'backtest' ? 'active' : ''}`} onClick={() => setActiveTab('backtest')}>
               <Play size={16} style={{marginRight: 6}} /> Backtester
@@ -412,18 +414,43 @@ function App() {
                 <thead>
                   <tr>
                     <th>Asset</th>
-                    <th>Price</th>
+                    <th>Current Price</th>
                     <th>Action</th>
+                    <th>Target Buy Price</th>
+                    <th>Target Sell Price</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {filteredWatchlist.map((sig, idx) => (
-                    <tr key={idx} style={{cursor: 'pointer'}} onClick={() => { setSelectedSymbol(sig.symbol); setActiveTab('analysis'); }}>
-                      <td style={{fontWeight: 600}}>{sig.symbol.replace('.NS', '')}</td>
-                      <td>₹{sig.price?.toFixed(2)}</td>
-                      <td>{getSignalBadge(sig.signal)}</td>
-                    </tr>
-                  ))}
+                  {filteredWatchlist.map((sig, idx) => {
+                    // Simulated signals for display purposes as requested by user
+                    const isBuy = sig.signal === 'BUY';
+                    const isSell = sig.signal === 'SELL';
+                    
+                    let buyAt = sig.price;
+                    let sellAt = sig.price;
+
+                    if (isBuy) {
+                      buyAt = sig.price; 
+                      sellAt = sig.price * 1.015; // 1.5% target
+                    } else if (isSell) {
+                      buyAt = sig.price * 0.985; // short cover target
+                      sellAt = sig.price;
+                    } else {
+                      // Neutral
+                      buyAt = sig.price * 0.995; // buy on slight dip
+                      sellAt = sig.price * 1.005; // sell on slight peak
+                    }
+
+                    return (
+                      <tr key={idx} style={{cursor: 'pointer'}} onClick={() => { setSelectedSymbol(sig.symbol); setActiveTab('analysis'); }}>
+                        <td style={{fontWeight: 600}}>{sig.symbol.replace('.NS', '')}</td>
+                        <td>₹{sig.price?.toFixed(2)}</td>
+                        <td>{getSignalBadge(sig.signal)}</td>
+                        <td style={{color: 'var(--bullish)', fontWeight: 500}}>₹{buyAt?.toFixed(2)}</td>
+                        <td style={{color: 'var(--bearish)', fontWeight: 500}}>₹{sellAt?.toFixed(2)}</td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
@@ -524,6 +551,35 @@ function App() {
                   </p>
                 </div>
 
+                <div style={{background: 'rgba(255,255,255,0.03)', padding: 12, borderRadius: 12, marginBottom: 16, border: '1px solid rgba(255,255,255,0.05)', textAlign: 'center'}}>
+                  <span style={{fontSize: '0.8rem', color: 'var(--text-secondary)'}}>Live Algorithmic Signal</span>
+                  {(() => {
+                    const tech = analysisData.technicals;
+                    let score = 0;
+                    if (tech.trend_strength?.toLowerCase().includes('uptrend')) score += 2;
+                    if (tech.trend_strength?.toLowerCase().includes('downtrend')) score -= 2;
+                    if (tech.rsi_status?.toLowerCase() === 'bullish') score += 1;
+                    if (tech.rsi_status?.toLowerCase() === 'bearish') score -= 1;
+                    if (tech.rsi_status?.toLowerCase() === 'overbought') score -= 2;
+                    if (tech.rsi_status?.toLowerCase() === 'oversold') score += 2;
+                    if (tech.is_sideways) score = score / 2;
+                    
+                    let signal = 'NEUTRAL';
+                    let color = 'var(--text-muted)';
+                    let glow = 'none';
+                    if (score >= 2.5) { signal = 'STRONG BUY'; color = 'var(--bullish)'; glow = '0 0 15px rgba(16, 185, 129, 0.4)'; }
+                    else if (score >= 1) { signal = 'BUY'; color = '#34d399'; glow = '0 0 10px rgba(52, 211, 153, 0.3)'; }
+                    else if (score <= -2.5) { signal = 'STRONG SELL'; color = 'var(--bearish)'; glow = '0 0 15px rgba(239, 68, 68, 0.4)'; }
+                    else if (score <= -1) { signal = 'SELL'; color = '#f87171'; glow = '0 0 10px rgba(248, 113, 113, 0.3)'; }
+                    
+                    return (
+                      <div style={{fontSize: '1.5rem', fontWeight: 700, color, textShadow: glow, marginTop: 4, letterSpacing: '1.5px'}}>
+                        {signal}
+                      </div>
+                    );
+                  })()}
+                </div>
+
                 <h4 style={{margin: '0 0 12px 0'}}>Technicals Summary</h4>
                 <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 20}}>
                   <div className="sub-stat-card">
@@ -567,6 +623,59 @@ function App() {
 
           {/* Charts Panel with Line Toggles */}
           <div className="card glass chart-card" style={{gridColumn: 'span 8'}}>
+            {indicatorsData.length > 0 && (() => {
+              const latestData = indicatorsData[indicatorsData.length - 1];
+              const firstData = indicatorsData[0];
+              const currentPrice = latestData?.close;
+              const prevPrice = firstData?.close;
+              const priceDiff = currentPrice - prevPrice;
+              const pricePct = prevPrice !== 0 ? (priceDiff / prevPrice) * 100 : 0;
+              const isPositive = priceDiff >= 0;
+              
+              const highs = indicatorsData.map(d => d.high).filter(Boolean);
+              const lows = indicatorsData.map(d => d.low).filter(Boolean);
+              const dayHigh = highs.length ? Math.max(...highs) : 0;
+              const dayLow = lows.length ? Math.min(...lows) : 0;
+              const lowHighDiff = dayHigh - dayLow;
+              const currentPositionPct = lowHighDiff > 0 ? ((currentPrice - dayLow) / lowHighDiff) * 100 : 50;
+
+              return (
+                <div style={{marginBottom: 24, display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 16, background: 'rgba(255,255,255,0.02)', padding: '16px 20px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.05)'}}>
+                  <div>
+                    <span style={{fontSize: '0.85rem', color: 'var(--text-secondary)'}}>Live Market Price</span>
+                    <div style={{display: 'flex', alignItems: 'baseline', gap: 8}}>
+                      <h2 style={{margin: 0, fontSize: '2.25rem', color: isPositive ? 'var(--bullish)' : 'var(--bearish)'}}>
+                        ₹{currentPrice?.toFixed(2)}
+                      </h2>
+                      <span style={{fontSize: '0.95rem', fontWeight: 600, color: isPositive ? 'var(--bullish)' : 'var(--bearish)'}}>
+                        {isPositive ? '▲' : '▼'} {Math.abs(priceDiff)?.toFixed(2)} ({isPositive ? '+' : ''}{pricePct?.toFixed(2)}%)
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Day's Range Slider like Groww */}
+                  <div style={{flex: 1, minWidth: 200, maxWidth: 300}}>
+                    <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', color: 'var(--text-secondary)', marginBottom: 8, fontWeight: 500}}>
+                      <span>Day Low: ₹{dayLow?.toFixed(2)}</span>
+                      <span>Day High: ₹{dayHigh?.toFixed(2)}</span>
+                    </div>
+                    <div style={{height: 6, background: 'rgba(255,255,255,0.1)', borderRadius: 3, position: 'relative'}}>
+                      <div style={{
+                        position: 'absolute', 
+                        left: `${Math.min(100, Math.max(0, currentPositionPct))}%`, 
+                        top: -4, 
+                        width: 14, 
+                        height: 14, 
+                        background: isPositive ? 'var(--bullish)' : 'var(--bearish)', 
+                        borderRadius: '50%', 
+                        boxShadow: `0 0 10px ${isPositive ? 'rgba(16, 185, 129, 0.6)' : 'rgba(239, 68, 68, 0.6)'}`
+                      }} />
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+
             <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16}}>
               <h3 style={{margin: 0}}>Interactive Charting</h3>
               
@@ -596,17 +705,25 @@ function App() {
               <>
                 <div style={{width: '100%', height: 320}}>
                   <ResponsiveContainer width="100%" height="100%">
-                    <LineChart data={indicatorsData}>
+                    <ComposedChart data={indicatorsData}>
+                      <defs>
+                        <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="5%" stopColor="var(--primary)" stopOpacity={0.4}/>
+                          <stop offset="95%" stopColor="var(--primary)" stopOpacity={0}/>
+                        </linearGradient>
+                      </defs>
                       <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
                       <XAxis dataKey="timestamp" stroke="var(--text-muted)" fontSize={10} tickFormatter={(str) => str?.slice(11, 16)} />
                       <YAxis stroke="var(--text-muted)" domain={['auto', 'auto']} />
                       <Tooltip contentStyle={{background: '#0f172a', borderColor: '#334155'}} />
                       <Legend />
-                      {chartLines.price && <Line type="monotone" dataKey="close" stroke="#f8fafc" strokeWidth={2} dot={false} name="Price" />}
+                      {chartLines.price && (
+                        <Area type="monotone" dataKey="close" stroke="var(--primary)" strokeWidth={2.5} fillOpacity={1} fill="url(#colorPrice)" name="Price" />
+                      )}
                       {chartLines.vwap && <Line type="monotone" dataKey="vwap" stroke="#eab308" strokeWidth={1.5} dot={false} name="VWAP" />}
-                      {chartLines.ema_20 && <Line type="monotone" dataKey="ema_20" stroke="#0ea5e9" strokeWidth={1} dot={false} name="EMA 20" />}
-                      {chartLines.ema_50 && <Line type="monotone" dataKey="ema_50" stroke="#6366f1" strokeWidth={1} dot={false} name="EMA 50" />}
-                    </LineChart>
+                      {chartLines.ema_20 && <Line type="monotone" dataKey="ema_20" stroke="#0ea5e9" strokeWidth={1.5} dot={false} name="EMA 20" />}
+                      {chartLines.ema_50 && <Line type="monotone" dataKey="ema_50" stroke="#6366f1" strokeWidth={1.5} dot={false} name="EMA 50" />}
+                    </ComposedChart>
                   </ResponsiveContainer>
                 </div>
                 
@@ -637,7 +754,10 @@ function App() {
             <form onSubmit={handleRunBacktest}>
               <div className="form-group">
                 <label>Symbol</label>
-                <input type="text" className="form-input" value={btSymbol} onChange={(e) => setBtSymbol(e.target.value)} placeholder="e.g. RELIANCE.NS" required />
+                <input type="text" className="form-input" value={btSymbol} onChange={(e) => setBtSymbol(e.target.value)} placeholder="e.g. RELIANCE.NS or NIFTY50" required />
+                <span style={{fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', marginTop: 4, display: 'block'}}>
+                  Tip: Type <b>NIFTY50</b> or a comma-separated list.
+                </span>
               </div>
               <div className="form-group">
                 <label>Interval</label>
@@ -694,6 +814,7 @@ function App() {
                   <table>
                     <thead>
                       <tr>
+                        <th>Symbol</th>
                         <th>Type</th>
                         <th>Units</th>
                         <th>Entry Price</th>
@@ -704,6 +825,7 @@ function App() {
                     <tbody>
                       {btResults.trades?.map((trade, idx) => (
                         <tr key={idx}>
+                          <td style={{fontWeight: 600, color: '#eab308'}}>{trade.symbol ? trade.symbol.replace('.NS', '') : 'N/A'}</td>
                           <td style={{fontWeight: 600}} className={trade.type === 'LONG' ? 'text-bullish' : 'text-bearish'}>{trade.type}</td>
                           <td>{trade.units}</td>
                           <td>₹{trade.entry_price?.toFixed(2)}</td>

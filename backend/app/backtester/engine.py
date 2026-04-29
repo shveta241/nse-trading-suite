@@ -32,6 +32,7 @@ class BacktestEngine:
         
         position = 0  # 1 for Long, -1 for Short (if shorting allowed), 0 for Flat
         entry_price = 0.0
+        entry_time = None
         units = 0
         trades: List[Dict[str, Any]] = []
         
@@ -60,6 +61,7 @@ class BacktestEngine:
             if position == 0 and signal != 0:
                 # Enter Trade
                 entry_price = price
+                entry_time = current_time
                 position = signal
                 # Target units based on risk
                 stop_loss_dist = entry_price * 0.015  # 1.5% SL
@@ -81,7 +83,7 @@ class BacktestEngine:
                 
                 trades.append({
                     "type": "LONG",
-                    "entry_time": None, # Could track
+                    "entry_time": entry_time.isoformat() if isinstance(entry_time, pd.Timestamp) else str(entry_time) if entry_time else None,
                     "exit_time": current_time,
                     "entry_price": entry_price,
                     "exit_price": exit_price,
@@ -91,6 +93,7 @@ class BacktestEngine:
                 logger.info(f"Backtest EXIT: SELL {units} @ {exit_price} | PnL: {profit}")
                 position = 0
                 units = 0
+                entry_time = None
 
             elif position == -1 and signal == 1:
                 # Exit Short (simulated)
@@ -102,7 +105,7 @@ class BacktestEngine:
                 
                 trades.append({
                     "type": "SHORT",
-                    "entry_time": None,
+                    "entry_time": entry_time.isoformat() if isinstance(entry_time, pd.Timestamp) else str(entry_time) if entry_time else None,
                     "exit_time": current_time,
                     "entry_price": entry_price,
                     "exit_price": exit_price,
@@ -112,6 +115,7 @@ class BacktestEngine:
                 logger.info(f"Backtest EXIT: COVER {units} @ {exit_price} | PnL: {profit}")
                 position = 0
                 units = 0
+                entry_time = None
 
             # Calculate current equity
             current_equity = capital
