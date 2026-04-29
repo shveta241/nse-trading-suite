@@ -33,6 +33,8 @@ function App() {
   // Advanced Analysis states
   const [analysisData, setAnalysisData] = useState(null);
   const [analysisLoading, setAnalysisLoading] = useState(false);
+  const [optionChain, setOptionChain] = useState(null);
+  const [globalSentiment, setGlobalSentiment] = useState(null);
 
   // Backtest states
   const [btSymbol, setBtSymbol] = useState('RELIANCE.NS');
@@ -122,6 +124,17 @@ function App() {
     }
   };
 
+  const fetchAdvancedData = async (sym) => {
+    try {
+      const sentimentRes = await axios.get(`${API_BASE_URL}/api/global_sentiment`);
+      setGlobalSentiment(sentimentRes.data);
+      const ocRes = await axios.get(`${API_BASE_URL}/api/option_chain?symbol=${sym}&spot_price=0`);
+      setOptionChain(ocRes.data);
+    } catch (e) {
+      console.error("Error fetching advanced data", e);
+    }
+  };
+
   const handlePlaceOrder = async (e) => {
     if (e) e.preventDefault();
     setOrderLoading(true);
@@ -171,11 +184,13 @@ function App() {
     fetchPositions();
     fetchIndicators(selectedSymbol);
     fetchAnalysis(selectedSymbol);
+    fetchAdvancedData(selectedSymbol);
 
     const interval = setInterval(() => {
       if (activeTab === 'live' || activeTab === 'analysis') {
         fetchLiveSignals();
         fetchPositions();
+        fetchAdvancedData(selectedSymbol);
       }
     }, 15000);
 
@@ -601,6 +616,56 @@ function App() {
                     <span className="sub-stat-val text-secondary">{analysisData.technicals.vwap_proximity}</span>
                   </div>
                 </div>
+
+                {globalSentiment && (
+                  <>
+                    <h4 style={{margin: '0 0 12px 0'}}>Global Sentiment & Macro</h4>
+                    <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginBottom: 20}}>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">Overall Bias</span>
+                        <span className={`sub-stat-val ${globalSentiment.overall_impact === 'BULLISH' ? 'text-bullish' : globalSentiment.overall_impact === 'BEARISH' ? 'text-bearish' : 'text-primary'}`}>
+                          {globalSentiment.overall_impact}
+                        </span>
+                      </div>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">News Score</span>
+                        <span className="sub-stat-val text-secondary">{globalSentiment.sentiment.score.toFixed(1)}</span>
+                      </div>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">Global Markets</span>
+                        <span className="sub-stat-val text-secondary">{globalSentiment.global_score.toFixed(1)}</span>
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {optionChain && (
+                  <>
+                    <h4 style={{margin: '0 0 12px 0'}}>Options AI Analytics</h4>
+                    <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 20}}>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">Put-Call Ratio (PCR)</span>
+                        <span className={`sub-stat-val ${optionChain.pcr > 1.0 ? 'text-bullish' : 'text-bearish'}`}>
+                          {optionChain.pcr.toFixed(2)} {optionChain.pcr > 1.0 ? '(Bullish)' : '(Bearish)'}
+                        </span>
+                      </div>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">Highest Put OI (Support)</span>
+                        <span className="sub-stat-val text-bullish">{optionChain.support}</span>
+                      </div>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">Highest Call OI (Resistance)</span>
+                        <span className="sub-stat-val text-bearish">{optionChain.resistance}</span>
+                      </div>
+                      <div className="sub-stat-card">
+                        <span className="sub-stat-label">Trend Bias</span>
+                        <span className={`sub-stat-val ${optionChain.bias === 'BULLISH' ? 'text-bullish' : 'text-bearish'}`}>
+                          {optionChain.bias}
+                        </span>
+                      </div>
+                    </div>
+                  </>
+                )}
 
                 <h4 style={{margin: '0 0 12px 0'}}>Fundamentals Overview</h4>
                 <p style={{fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: 16, lineHeight: 1.5}}>

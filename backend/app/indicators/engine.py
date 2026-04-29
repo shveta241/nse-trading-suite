@@ -82,20 +82,40 @@ class IndicatorEngine:
         range_pct = (rolling_high - rolling_low) / df['close'] * 100.0
         return range_pct < threshold
 
+    @staticmethod
+    def calculate_macd(df: pd.DataFrame, fast_period: int = 12, slow_period: int = 26, signal_period: int = 9) -> pd.DataFrame:
+        """
+        Calculates MACD, Signal Line, and Histogram.
+        """
+        logger.debug(f"Calculating MACD ({fast_period}, {slow_period}, {signal_period})")
+        fast_ema = df['close'].ewm(span=fast_period, adjust=False).mean()
+        slow_ema = df['close'].ewm(span=slow_period, adjust=False).mean()
+        macd = fast_ema - slow_ema
+        signal = macd.ewm(span=signal_period, adjust=False).mean()
+        histogram = macd - signal
+        return pd.DataFrame({'macd': macd, 'macd_signal': signal, 'macd_hist': histogram}, index=df.index)
+
     @classmethod
     def apply_indicators(cls, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Applies standard indicators requested (RSI 14, EMA 20, EMA 50, VWAP, Sideways) to the dataframe.
+        Applies standard indicators requested (RSI 14, EMA 9, EMA 20, EMA 50, VWAP, Sideways, MACD) to the dataframe.
         """
         if df.empty:
             return df
             
         df = df.copy()
+        df['ema_9'] = cls.calculate_ema(df, 9)
         df['ema_20'] = cls.calculate_ema(df, 20)
         df['ema_50'] = cls.calculate_ema(df, 50)
         df['rsi_14'] = cls.calculate_rsi(df, 14)
         df['vwap'] = cls.calculate_vwap(df)
         df['sideways'] = cls.calculate_sideways(df)
         
+        macd_df = cls.calculate_macd(df)
+        df['macd'] = macd_df['macd']
+        df['macd_signal'] = macd_df['macd_signal']
+        df['macd_hist'] = macd_df['macd_hist']
+        
         return df
+
 

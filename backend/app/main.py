@@ -10,9 +10,13 @@ from app.data.yfinance_client import YFinanceClient
 from app.data.mock_client import MockClient
 from app.indicators.engine import IndicatorEngine
 from app.strategies.vwap_rsi_ema import VwapRsiEmaStrategy
+from app.strategies.probabilistic_engine import ProbabilisticEngineStrategy
+from app.data.option_chain import OptionChainAnalyzer
+from app.data.sentiment_engine import SentimentEngine
 from app.backtester.engine import BacktestEngine
 from app.execution.mock_executor import MockExecutor
 from app.utils.logger import get_logger
+
 
 logger = get_logger("Main")
 
@@ -192,20 +196,24 @@ def get_indicators(symbol: str, interval: str = '5m'):
     return data
 
 @app.get("/api/signals")
-def get_live_signals():
+def get_live_signals(expiry_mode: bool = False):
     """
-    Checks real-time signals for a predefined watchlist of NSE stocks.
+    Checks real-time signals for predefined watchlist using AI Probabilistic Scoring.
     """
-    watchlist = ['^NSEI', 'RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS']
+    watchlist = ['^NSEI', 'RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS', 'BSE:SENSEX']
     signals = []
     
-    strategy = VwapRsiEmaStrategy()
+    strategy = ProbabilisticEngineStrategy(expiry_mode=expiry_mode)
     
     for symbol in watchlist:
-        # Fetch tiny historical chunk to calculate indicators
         start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
-        df = yfinance_client.fetch_historical_data(symbol, '5m', start_date)
         
+        if "SENSEX" in symbol:
+            # Fallback for SENSEX data mapping
+            df = mock_client.fetch_historical_data('^BSESN', '5m', start_date)
+        else:
+            df = yfinance_client.fetch_historical_data(symbol, '5m', start_date)
+            
         if df.empty:
             df = mock_client.fetch_historical_data(symbol, '5m', start_date)
             
@@ -228,6 +236,29 @@ def get_live_signals():
             })
             
     return signals
+
+@app.get("/api/option_chain")
+def get_option_chain_analysis(symbol: str = "NIFTY", spot_price: float = 22000.0):
+    """
+    Returns Support, Resistance, ATM strike, and PCR metrics.
+    """
+    # Uses fallback simulation for rapid computation
+    analysis = OptionChainAnalyzer.analyze_chain([], spot_price)
+    return analysis
+
+@app.get("/api/global_sentiment")
+def get_sentiment():
+    """
+    Returns scores for global indicators & news sentiment.
+    """
+    sent = SentimentEngine.analyze_news_sentiment()
+    glob_score = SentimentEngine.get_global_markets_score()
+    return {
+        "sentiment": sent,
+        "global_score": glob_score,
+        "overall_impact": "BULLISH" if (sent['score'] + glob_score) > 30 else "BEARISH" if (sent['score'] + glob_score) < -30 else "NEUTRAL"
+    }
+
 
 
 @app.get("/api/analysis")
