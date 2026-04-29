@@ -81,7 +81,7 @@ Here is the exact step-by-step lifecycle of an automated trade:
 **A**: If the Angel One API hits a rate limit, or outside of market hours, the `OptionChainAnalyzer` falls back to smart simulated bounds based on the current spot price to keep the frontend running without crashing.
 
 **Q4: How are expiry day strategies different?**
-**A**: On Thursdays (Nifty Expiry), the `ProbabilisticEngine` enables `expiry_mode`. It reduces reliance on lagging indicators like MACD and heavily weighs **Option Chain PCR** and **OI un-winding** to catch rapid Gamma spikes (Hero-Zero trades).
+**A**: On Tuesdays (Nifty Expiry) and Thursdays (Sensex Expiry), the `ProbabilisticEngine` enables `expiry_mode`. It reduces reliance on lagging indicators like MACD and heavily weighs **Option Chain PCR** and **OI un-winding** to catch rapid Gamma spikes (Hero-Zero trades).
 
 **Q5: What happens if my internet disconnects?**
 **A**: The backend runs independently on your server (e.g., Render). Even if your browser frontend closes, the backend will continue to monitor open positions and execute Stop Losses.
