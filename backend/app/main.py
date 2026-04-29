@@ -52,9 +52,12 @@ async def auto_trade_loop():
             try:
                 today = datetime.now().weekday()
                 is_auto_expiry = today in [1, 2, 3, 4] # Any weekday can be an expiry for something, trigger hero-zero mode for scalping
-                strategy = ProbabilisticEngineStrategy(expiry_mode=is_auto_expiry)
                 
                 for symbol in watchlist:
+                    # Expiry logic should only apply to indices
+                    current_expiry_mode = is_auto_expiry and symbol in ['^NSEI', 'BSE:SENSEX']
+                    strategy = ProbabilisticEngineStrategy(expiry_mode=current_expiry_mode)
+                    
                     start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
                     
                     if "SENSEX" in symbol:
@@ -273,10 +276,11 @@ def get_live_signals(expiry_mode: bool = False):
     """
     watchlist = ['^NSEI', 'RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS', 'BSE:SENSEX']
     signals = []
-    
-    strategy = ProbabilisticEngineStrategy(expiry_mode=expiry_mode)
-    
     for symbol in watchlist:
+        # Expiry mode should only trigger for Indices, not equities
+        current_expiry_mode = expiry_mode and symbol in ['^NSEI', 'BSE:SENSEX']
+        strategy = ProbabilisticEngineStrategy(expiry_mode=current_expiry_mode)
+        
         start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
         
         if "SENSEX" in symbol:
