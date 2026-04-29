@@ -51,11 +51,15 @@ async def auto_trade_loop():
         if auto_trade_state["enabled"]:
             try:
                 today = datetime.now().weekday()
-                is_auto_expiry = today in [1, 2, 3, 4] # Any weekday can be an expiry for something, trigger hero-zero mode for scalping
                 
                 for symbol in watchlist:
-                    # Expiry logic should only apply to indices
-                    current_expiry_mode = is_auto_expiry and symbol in ['^NSEI', 'BSE:SENSEX']
+                    # Expiry logic strictly bound to respective days: Nifty (Tue=1), Sensex (Thu=3)
+                    current_expiry_mode = False
+                    if symbol == '^NSEI' and today == 1:
+                        current_expiry_mode = True
+                    elif symbol == 'BSE:SENSEX' and today == 3:
+                        current_expiry_mode = True
+                        
                     strategy = ProbabilisticEngineStrategy(expiry_mode=current_expiry_mode)
                     
                     start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
@@ -276,9 +280,16 @@ def get_live_signals(expiry_mode: bool = False):
     """
     watchlist = ['^NSEI', 'RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS', 'BSE:SENSEX']
     signals = []
+    today = datetime.now().weekday()
     for symbol in watchlist:
-        # Expiry mode should only trigger for Indices, not equities
-        current_expiry_mode = expiry_mode and symbol in ['^NSEI', 'BSE:SENSEX']
+        # Expiry mode strictly applies ONLY on the designated expiry day for each Index
+        current_expiry_mode = False
+        if expiry_mode:
+            if symbol == '^NSEI' and today == 1: # Tuesday
+                current_expiry_mode = True
+            elif symbol == 'BSE:SENSEX' and today == 3: # Thursday
+                current_expiry_mode = True
+                
         strategy = ProbabilisticEngineStrategy(expiry_mode=current_expiry_mode)
         
         start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
