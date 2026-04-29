@@ -3068,3 +3068,1303 @@
 2026-04-29 13:05:03,329 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - LIVE SIGNAL: BUY
 2026-04-29 13:05:03,329 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
 2026-04-29 13:05:03,439 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:08,926 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:58:08,927 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:08,928 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:12,816 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:12,944 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:13,064 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:13,193 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:13,336 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:58:23,891 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:58:24,025 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:24,157 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:24,286 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:24,402 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:24,518 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:58:38,902 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:58:39,130 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:39,351 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:39,463 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:39,576 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:39,692 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:58:53,895 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:58:54,009 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:54,132 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:54,257 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:54,596 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:58:54,713 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:59:08,024 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,029 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,032 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,337 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,455 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,584 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,707 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:08,942 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:59:23,042 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:23,274 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:23,398 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:23,529 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:23,652 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:23,869 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:59:25,093 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,096 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,097 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,256 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,412 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,536 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,699 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:25,824 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:59:40,101 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:40,426 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:40,559 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:40,693 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:40,815 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:40,924 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 14:59:55,103 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 14:59:55,215 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:55,332 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:55,445 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:55,568 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 14:59:55,771 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:00:03,802 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:00:03,803 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:00:03,811 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:00:04,075 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:00:04,196 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:00:04,384 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:00:04,576 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:00:04,690 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:00:13,739 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-01 to None
+2026-04-29 15:00:13,998 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday
+2026-04-29 15:00:13,999 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-04-29 15:00:14,005 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 48 @ 1372.0 on 2026-04-01 09:25:00+05:30
+2026-04-29 15:00:14,006 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 48 @ 1371.0 | PnL: 48.0
+2026-04-29 15:00:14,007 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1369.4000244140625 on 2026-04-01 09:35:00+05:30
+2026-04-29 15:00:14,022 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 1365.9000244140625 | PnL: -168.0
+2026-04-29 15:00:14,022 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 48 @ 1364.699951171875 on 2026-04-01 13:50:00+05:30
+2026-04-29 15:00:14,046 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 48 @ 1355.800048828125 | PnL: 427.1953125
+2026-04-29 15:00:14,054 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 49 @ 1354.0999755859375 on 2026-04-02 14:25:00+05:30
+2026-04-29 15:00:14,063 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 49 @ 1325.5 | PnL: -1401.3988037109375
+2026-04-29 15:00:14,065 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 49 @ 1326.199951171875 on 2026-04-06 09:30:00+05:30
+2026-04-29 15:00:14,115 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 49 @ 1300.5999755859375 | PnL: 1254.3988037109375
+2026-04-29 15:00:14,120 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 51 @ 1303.0 on 2026-04-07 15:00:00+05:30
+2026-04-29 15:00:14,147 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 51 @ 1336.699951171875 | PnL: 1718.697509765625
+2026-04-29 15:00:14,153 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 50 @ 1337.5999755859375 on 2026-04-09 10:15:00+05:30
+2026-04-29 15:00:14,170 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 50 @ 1342.4000244140625 | PnL: -240.00244140625
+2026-04-29 15:00:14,170 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 50 @ 1348.4000244140625 on 2026-04-10 09:45:00+05:30
+2026-04-29 15:00:14,188 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 50 @ 1313.300048828125 | PnL: -1754.998779296875
+2026-04-29 15:00:14,189 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 50 @ 1314.199951171875 on 2026-04-13 09:25:00+05:30
+2026-04-29 15:00:14,210 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 50 @ 1336.800048828125 | PnL: -1130.0048828125
+2026-04-29 15:00:14,211 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 49 @ 1337.300048828125 on 2026-04-15 09:35:00+05:30
+2026-04-29 15:00:14,231 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 49 @ 1334.0 | PnL: -161.702392578125
+2026-04-29 15:00:14,232 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 49 @ 1335.5 on 2026-04-16 10:15:00+05:30
+2026-04-29 15:00:14,245 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 49 @ 1340.800048828125 | PnL: -259.702392578125
+2026-04-29 15:00:14,246 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1341.0 on 2026-04-16 14:40:00+05:30
+2026-04-29 15:00:14,280 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 1358.0 | PnL: 816.0
+2026-04-29 15:00:14,282 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 48 @ 1356.4000244140625 on 2026-04-21 12:45:00+05:30
+2026-04-29 15:00:14,295 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 48 @ 1361.5999755859375 | PnL: -249.59765625
+2026-04-29 15:00:14,296 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1362.9000244140625 on 2026-04-22 10:50:00+05:30
+2026-04-29 15:00:14,311 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 1354.9000244140625 | PnL: -384.0
+2026-04-29 15:00:14,313 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 48 @ 1353.300048828125 on 2026-04-23 09:35:00+05:30
+2026-04-29 15:00:14,352 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 48 @ 1339.300048828125 | PnL: 672.0
+2026-04-29 15:00:14,353 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 49 @ 1339.9000244140625 on 2026-04-27 10:15:00+05:30
+2026-04-29 15:00:14,416 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-01 to None
+2026-04-29 15:00:14,603 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday
+2026-04-29 15:00:14,603 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-04-29 15:00:14,606 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 27 @ 2442.0 on 2026-04-01 09:25:00+05:30
+2026-04-29 15:00:14,618 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 27 @ 2434.10009765625 | PnL: -213.29736328125
+2026-04-29 15:00:14,619 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 27 @ 2428.89990234375 on 2026-04-01 13:20:00+05:30
+2026-04-29 15:00:14,638 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 27 @ 2423.199951171875 | PnL: 153.898681640625
+2026-04-29 15:00:14,639 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 27 @ 2437.5 on 2026-04-02 13:20:00+05:30
+2026-04-29 15:00:14,715 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 27 @ 2541.0 | PnL: 2794.5
+2026-04-29 15:00:14,716 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 27 @ 2516.699951171875 on 2026-04-10 09:35:00+05:30
+2026-04-29 15:00:14,753 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 27 @ 2547.800048828125 | PnL: -839.70263671875
+2026-04-29 15:00:14,754 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 26 @ 2534.199951171875 on 2026-04-15 09:30:00+05:30
+2026-04-29 15:00:14,806 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 26 @ 2574.60009765625 | PnL: 1050.40380859375
+2026-04-29 15:00:14,811 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 26 @ 2590.800048828125 on 2026-04-21 10:05:00+05:30
+2026-04-29 15:00:14,827 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 26 @ 2571.10009765625 | PnL: -512.19873046875
+2026-04-29 15:00:14,829 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 26 @ 2567.0 on 2026-04-22 10:05:00+05:30
+2026-04-29 15:00:14,848 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 26 @ 2553.0 | PnL: 364.0
+2026-04-29 15:00:14,849 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 26 @ 2551.199951171875 on 2026-04-23 10:25:00+05:30
+2026-04-29 15:00:14,857 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 26 @ 2536.5 | PnL: -382.19873046875
+2026-04-29 15:00:14,857 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 26 @ 2536.0 on 2026-04-23 13:00:00+05:30
+2026-04-29 15:00:14,886 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 26 @ 2424.300048828125 | PnL: 2904.19873046875
+2026-04-29 15:00:14,888 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 28 @ 2434.800048828125 on 2026-04-27 10:15:00+05:30
+2026-04-29 15:00:14,914 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 28 @ 2448.300048828125 | PnL: 378.0
+2026-04-29 15:00:14,915 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 28 @ 2445.0 on 2026-04-28 12:40:00+05:30
+2026-04-29 15:00:14,927 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 28 @ 2461.800048828125 | PnL: -470.4013671875
+2026-04-29 15:00:14,927 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 28 @ 2472.0 on 2026-04-29 09:45:00+05:30
+2026-04-29 15:00:14,958 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-01 to None
+2026-04-29 15:00:15,138 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday
+2026-04-29 15:00:15,138 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-04-29 15:00:15,141 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 88 @ 751.7999877929688 on 2026-04-01 09:25:00+05:30
+2026-04-29 15:00:15,142 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 88 @ 746.5 | PnL: -466.39892578125
+2026-04-29 15:00:15,142 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 88 @ 747.1500244140625 on 2026-04-01 09:40:00+05:30
+2026-04-29 15:00:15,157 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 88 @ 748.4000244140625 | PnL: -110.0
+2026-04-29 15:00:15,159 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 88 @ 747.6500244140625 on 2026-04-01 14:30:00+05:30
+2026-04-29 15:00:15,161 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 88 @ 742.0 | PnL: -497.2021484375
+2026-04-29 15:00:15,162 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 89 @ 740.75 on 2026-04-01 15:10:00+05:30
+2026-04-29 15:00:15,175 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 89 @ 739.0 | PnL: 155.75
+2026-04-29 15:00:15,176 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 89 @ 740.7999877929688 on 2026-04-02 13:25:00+05:30
+2026-04-29 15:00:15,238 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 89 @ 801.75 | PnL: 5424.551086425781
+2026-04-29 15:00:15,239 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 86 @ 802.9500122070312 on 2026-04-09 10:10:00+05:30
+2026-04-29 15:00:15,255 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 86 @ 805.5 | PnL: -219.2989501953125
+2026-04-29 15:00:15,256 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 85 @ 810.4000244140625 on 2026-04-10 09:50:00+05:30
+2026-04-29 15:00:15,273 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 85 @ 789.75 | PnL: -1755.2520751953125
+2026-04-29 15:00:15,274 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 86 @ 789.9000244140625 on 2026-04-13 09:35:00+05:30
+2026-04-29 15:00:15,289 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 86 @ 795.0499877929688 | PnL: -442.8968505859375
+2026-04-29 15:00:15,290 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 85 @ 796.75 on 2026-04-13 14:50:00+05:30
+2026-04-29 15:00:15,317 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 85 @ 807.75 | PnL: 935.0
+2026-04-29 15:00:15,317 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 85 @ 807.5999755859375 on 2026-04-16 11:30:00+05:30
+2026-04-29 15:00:15,337 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 85 @ 801.0999755859375 | PnL: 552.5
+2026-04-29 15:00:15,338 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 86 @ 798.9000244140625 on 2026-04-17 11:55:00+05:30
+2026-04-29 15:00:15,348 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 86 @ 793.7000122070312 | PnL: -447.2010498046875
+2026-04-29 15:00:15,350 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 86 @ 790.7999877929688 on 2026-04-20 09:35:00+05:30
+2026-04-29 15:00:15,355 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 86 @ 802.0 | PnL: -963.2010498046875
+2026-04-29 15:00:15,356 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 84 @ 803.0 on 2026-04-21 09:50:00+05:30
+2026-04-29 15:00:15,375 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 84 @ 804.9500122070312 | PnL: 163.801025390625
+2026-04-29 15:00:15,376 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 84 @ 803.5999755859375 on 2026-04-22 10:10:00+05:30
+2026-04-29 15:00:15,417 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 84 @ 786.4500122070312 | PnL: 1440.596923828125
+2026-04-29 15:00:15,418 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 87 @ 786.7000122070312 on 2026-04-24 12:05:00+05:30
+2026-04-29 15:00:15,424 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 87 @ 783.75 | PnL: -256.65106201171875
+2026-04-29 15:00:15,425 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 88 @ 781.9000244140625 on 2026-04-24 14:10:00+05:30
+2026-04-29 15:00:15,429 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 88 @ 789.1500244140625 | PnL: -638.0
+2026-04-29 15:00:15,430 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 87 @ 787.25 on 2026-04-27 09:30:00+05:30
+2026-04-29 15:00:15,454 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 87 @ 788.5999755859375 | PnL: 117.4478759765625
+2026-04-29 15:00:15,455 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 87 @ 787.7999877929688 on 2026-04-28 11:45:00+05:30
+2026-04-29 15:00:15,470 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 87 @ 787.4000244140625 | PnL: 34.79681396484375
+2026-04-29 15:00:15,472 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 87 @ 786.9000244140625 on 2026-04-29 11:25:00+05:30
+2026-04-29 15:00:15,479 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 87 @ 783.9500122070312 | PnL: -256.65106201171875
+2026-04-29 15:00:15,480 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 87 @ 783.9500122070312 on 2026-04-29 14:20:00+05:30
+2026-04-29 15:00:15,495 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-01 to None
+2026-04-29 15:00:15,663 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday
+2026-04-29 15:00:15,664 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-04-29 15:00:15,667 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 51 @ 1282.9000244140625 on 2026-04-01 09:25:00+05:30
+2026-04-29 15:00:15,672 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 51 @ 1295.0999755859375 | PnL: -622.197509765625
+2026-04-29 15:00:15,672 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 50 @ 1301.0 on 2026-04-01 10:00:00+05:30
+2026-04-29 15:00:15,682 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 50 @ 1283.4000244140625 | PnL: -879.998779296875
+2026-04-29 15:00:15,683 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 51 @ 1285.5 on 2026-04-01 13:10:00+05:30
+2026-04-29 15:00:15,701 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 51 @ 1281.5 | PnL: 204.0
+2026-04-29 15:00:15,701 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 51 @ 1283.5 on 2026-04-02 13:35:00+05:30
+2026-04-29 15:00:15,726 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 51 @ 1305.800048828125 | PnL: 1137.302490234375
+2026-04-29 15:00:15,728 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 50 @ 1321.0 on 2026-04-07 10:00:00+05:30
+2026-04-29 15:00:15,762 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 50 @ 1320.0 | PnL: -50.0
+2026-04-29 15:00:15,763 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 50 @ 1315.199951171875 on 2026-04-09 09:40:00+05:30
+2026-04-29 15:00:15,778 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 50 @ 1331.9000244140625 | PnL: -835.003662109375
+2026-04-29 15:00:15,779 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 49 @ 1330.800048828125 on 2026-04-09 14:55:00+05:30
+2026-04-29 15:00:15,781 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 49 @ 1302.199951171875 | PnL: -1401.40478515625
+2026-04-29 15:00:15,781 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 50 @ 1300.199951171875 on 2026-04-10 09:25:00+05:30
+2026-04-29 15:00:15,816 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 50 @ 1320.5 | PnL: -1015.00244140625
+2026-04-29 15:00:15,817 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1316.800048828125 on 2026-04-15 09:25:00+05:30
+2026-04-29 15:00:15,862 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 1309.5999755859375 | PnL: -345.603515625
+2026-04-29 15:00:15,863 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 48 @ 1310.699951171875 on 2026-04-17 13:25:00+05:30
+2026-04-29 15:00:15,867 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 48 @ 1318.199951171875 | PnL: -360.0
+2026-04-29 15:00:15,868 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1318.699951171875 on 2026-04-17 15:10:00+05:30
+2026-04-29 15:00:15,874 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 1302.800048828125 | PnL: -763.1953125
+2026-04-29 15:00:15,879 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1316.0 on 2026-04-21 10:45:00+05:30
+2026-04-29 15:00:15,889 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 1311.0 | PnL: -240.0
+2026-04-29 15:00:15,890 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 48 @ 1310.5 on 2026-04-21 14:15:00+05:30
+2026-04-29 15:00:15,949 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 48 @ 1177.5999755859375 | PnL: 6379.201171875
+2026-04-29 15:00:15,950 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 57 @ 1177.4000244140625 on 2026-04-27 10:25:00+05:30
+2026-04-29 15:00:15,961 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 57 @ 1170.5999755859375 | PnL: -387.602783203125
+2026-04-29 15:00:15,962 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 57 @ 1170.199951171875 on 2026-04-27 13:55:00+05:30
+2026-04-29 15:00:15,964 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 57 @ 1174.9000244140625 | PnL: -267.9041748046875
+2026-04-29 15:00:15,966 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 57 @ 1168.5999755859375 on 2026-04-27 15:15:00+05:30
+2026-04-29 15:00:15,987 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 57 @ 1168.4000244140625 | PnL: 11.397216796875
+2026-04-29 15:00:15,988 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 57 @ 1174.4000244140625 on 2026-04-29 09:45:00+05:30
+2026-04-29 15:00:16,001 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 57 @ 1168.800048828125 | PnL: -319.1986083984375
+2026-04-29 15:00:16,002 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 57 @ 1168.5999755859375 on 2026-04-29 14:55:00+05:30
+2026-04-29 15:02:34,115 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,131 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,139 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,348 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,468 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,584 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,708 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:34,823 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:02:49,143 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:02:49,255 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:49,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:49,560 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:49,676 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:02:49,802 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:03:04,155 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:03:04,272 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:04,391 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:04,500 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:04,610 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:04,792 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:03:19,143 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:03:19,262 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:19,376 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:19,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:19,676 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:19,790 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:03:34,146 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:03:34,256 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:34,375 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:34,489 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:34,613 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:34,865 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:03:49,144 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:03:49,259 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:49,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:49,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:49,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:03:49,718 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:04:04,156 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:04,338 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:04,448 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:04,562 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:04,687 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:04,875 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:04:19,150 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:19,261 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:19,378 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:19,586 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:19,705 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:19,896 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:04:26,391 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:26,396 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:26,398 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:26,504 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:26,719 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:26,864 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:26,982 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:27,174 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:04:29,077 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,077 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,081 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,314 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,437 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,637 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,749 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:29,874 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:04:44,093 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:44,201 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:44,302 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:44,432 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:44,571 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:44,686 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:04:59,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:04:59,194 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:59,309 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:59,414 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:59,517 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:04:59,660 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:05:14,083 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:05:14,192 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:14,308 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:14,489 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:14,614 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:14,750 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:05:29,086 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:05:29,199 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:29,305 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:29,410 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:29,529 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:29,641 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:05:44,086 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:05:44,192 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:44,303 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:44,408 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:44,542 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:44,650 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:05:59,086 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:05:59,194 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:59,363 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:59,468 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:59,649 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:05:59,759 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:06:14,093 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:06:14,203 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:14,308 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:14,421 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:14,527 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:14,638 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:06:29,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:06:29,200 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:29,305 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:29,415 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:29,524 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:29,635 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:06:44,082 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:06:44,190 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:44,300 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:44,476 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:44,629 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:44,740 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:06:59,081 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:06:59,192 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:59,304 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:59,406 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:59,545 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:06:59,656 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:07:14,081 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:07:14,195 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:14,303 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:14,418 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:14,557 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:14,667 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:07:29,085 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:07:29,203 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:29,378 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:29,504 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:29,617 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:29,722 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:07:44,098 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:07:44,237 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:44,347 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:44,451 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:44,553 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:44,727 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:07:59,085 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:07:59,194 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:59,324 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:59,430 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:59,618 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:07:59,746 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:08:14,085 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:08:14,188 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:14,292 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:14,419 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:14,528 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:14,631 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:08:29,093 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:08:29,202 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:29,312 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:29,427 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:29,535 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:29,649 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:08:44,084 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:08:44,190 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:44,323 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:44,433 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:44,539 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:44,647 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:08:59,090 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:08:59,269 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:59,387 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:59,535 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:59,713 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:08:59,825 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:09:14,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:09:14,199 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:14,304 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:14,411 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:14,518 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:14,626 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:09:29,084 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:09:29,267 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:29,377 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:29,484 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:29,600 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:29,737 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:09:44,091 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:09:44,205 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:44,319 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:44,431 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:44,537 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:44,644 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:09:59,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:09:59,202 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:59,305 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:59,416 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:59,596 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:09:59,768 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:10:14,080 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:10:14,192 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:14,302 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:14,429 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:14,612 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:14,718 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:10:29,090 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:10:29,206 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:29,335 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:29,442 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:29,558 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:29,676 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:10:44,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:10:44,196 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:44,369 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:44,549 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:44,662 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:44,771 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:10:59,087 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:10:59,195 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:59,296 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:59,396 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:59,505 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:10:59,681 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:11:14,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:11:14,204 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:14,313 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:14,420 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:14,608 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:14,735 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:11:29,091 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:11:29,199 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:29,332 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:29,442 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:29,541 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:29,649 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:11:44,084 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:11:44,194 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:44,392 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:44,495 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:44,598 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:44,704 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:11:59,090 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:11:59,197 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:59,302 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:59,406 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:59,512 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:11:59,617 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:12,874 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:12,874 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:12,876 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:13,011 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:13,184 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:13,390 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:13,502 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:13,625 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:14,093 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,227 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,353 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,353 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,365 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,353 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,516 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,529 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,655 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,693 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,796 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:14,835 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:15,000 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:15,110 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:29,092 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,214 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,329 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,355 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,445 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,514 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,551 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,657 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:29,689 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,807 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:29,923 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:30,114 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:44,086 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,194 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,305 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,357 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,455 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,569 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,661 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,693 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,780 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,816 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:44,888 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:44,952 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:47,189 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,189 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,197 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,308 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,488 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,595 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,701 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:47,881 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:51,018 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,018 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,019 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,222 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,288 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,424 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,541 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:51,679 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:53,697 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:53,699 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:53,701 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:53,845 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:53,969 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:54,078 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:54,187 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:54,319 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:12:59,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:12:59,206 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:59,312 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:59,429 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:59,542 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:12:59,654 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:00,540 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for SENSEX (5m) from 2026-04-01 to None
+2026-04-29 15:13:01,739 - AlgorithmicTradingSystem.YFinanceClient - WARNING - No data returned for SENSEX
+2026-04-29 15:13:01,739 - AlgorithmicTradingSystem.Main - INFO - Falling back to MockClient for backtest data for SENSEX
+2026-04-29 15:13:01,740 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for SENSEX
+2026-04-29 15:13:01,757 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday
+2026-04-29 15:13:01,758 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-04-29 15:13:01,762 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 65 @ 1013.331335880893 on 2026-04-01 00:10:00
+2026-04-29 15:13:01,762 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 65 @ 1029.720740542456 | PnL: -1065.3113030015982
+2026-04-29 15:13:01,763 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 64 @ 1026.4723391521056 on 2026-04-01 00:20:00
+2026-04-29 15:13:01,768 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 64 @ 968.6416906139565 | PnL: -3701.1615064415455
+2026-04-29 15:13:01,768 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 64 @ 982.7047457657683 on 2026-04-01 01:40:00
+2026-04-29 15:13:01,802 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 64 @ 927.4088834224839 | PnL: 3538.9351899702015
+2026-04-29 15:13:01,803 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 69 @ 951.1895633672029 on 2026-04-01 14:00:00
+2026-04-29 15:13:01,871 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 69 @ 1086.1179809896842 | PnL: 9310.060815951205
+2026-04-29 15:13:01,872 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 65 @ 1102.830007297809 on 2026-04-02 14:20:00
+2026-04-29 15:13:01,906 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 65 @ 1017.9722874229118 | PnL: 5515.7517918683225
+2026-04-29 15:13:01,907 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 75 @ 1002.862484575572 on 2026-04-03 02:35:00
+2026-04-29 15:13:01,923 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 75 @ 967.2631009427939 | PnL: -2669.9537724583565
+2026-04-29 15:13:01,924 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 74 @ 992.614442906341 on 2026-04-03 08:25:00
+2026-04-29 15:13:01,946 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 74 @ 1010.3997729731411 | PnL: -1316.1144249432116
+2026-04-29 15:13:01,946 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 71 @ 1015.6710489531183 on 2026-04-03 16:25:00
+2026-04-29 15:13:01,997 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 71 @ 1308.478376762794 | PnL: 20789.320274486967
+2026-04-29 15:13:01,997 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 65 @ 1319.751743238019 on 2026-04-04 11:00:00
+2026-04-29 15:13:02,000 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 65 @ 1403.9728399302096 | PnL: -5474.371284992396
+2026-04-29 15:13:02,001 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 58 @ 1427.5624886576359 on 2026-04-04 12:00:00
+2026-04-29 15:13:02,046 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 58 @ 1757.8709138554084 | PnL: 19157.888661470806
+2026-04-29 15:13:02,050 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 55 @ 1737.6781875070747 on 2026-04-05 05:05:00
+2026-04-29 15:13:02,055 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 55 @ 1817.8182394818482 | PnL: -4407.702858612545
+2026-04-29 15:13:02,056 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 50 @ 1834.1203811270245 on 2026-04-05 06:50:00
+2026-04-29 15:13:02,083 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 50 @ 1812.0121712612952 | PnL: -1105.4104932864675
+2026-04-29 15:13:02,083 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 50 @ 1824.817101201339 on 2026-04-05 16:45:00
+2026-04-29 15:13:02,093 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 50 @ 1884.4057139728748 | PnL: -2979.430638576787
+2026-04-29 15:13:02,093 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 48 @ 1850.5468935438448 on 2026-04-05 20:10:00
+2026-04-29 15:13:02,132 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 48 @ 2322.5996824228737 | PnL: 22658.533866193386
+2026-04-29 15:13:02,132 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 45 @ 2314.4214317642227 on 2026-04-06 11:30:00
+2026-04-29 15:13:02,144 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 45 @ 2394.0850337714774 | PnL: -3584.86209032646
+2026-04-29 15:13:02,145 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 43 @ 2363.1465678972754 on 2026-04-06 15:55:00
+2026-04-29 15:13:02,180 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 43 @ 2855.633832134399 | PnL: 21176.952362196324
+2026-04-29 15:13:02,182 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 41 @ 2850.029106267416 on 2026-04-07 05:50:00
+2026-04-29 15:13:02,207 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 41 @ 2773.212088127311 | PnL: 3149.49774374431
+2026-04-29 15:13:02,208 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 43 @ 2731.4154558045752 on 2026-04-07 14:50:00
+2026-04-29 15:13:02,213 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 43 @ 2616.7798221540484 | PnL: -4929.332246972655
+2026-04-29 15:13:02,213 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 43 @ 2666.153020869705 on 2026-04-07 16:40:00
+2026-04-29 15:13:02,221 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 43 @ 2820.3801947073835 | PnL: -6631.768475020175
+2026-04-29 15:13:02,223 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 39 @ 2857.001125959024 on 2026-04-07 19:35:00
+2026-04-29 15:13:02,235 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 39 @ 2791.6471349147673 | PnL: -2548.805650726018
+2026-04-29 15:13:02,235 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 39 @ 2750.3453910726384 on 2026-04-08 00:15:00
+2026-04-29 15:13:02,264 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 39 @ 2732.217583203293 | PnL: 706.9845069044691
+2026-04-29 15:13:02,278 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 40 @ 2734.6048086791347 on 2026-04-08 16:00:00
+2026-04-29 15:13:02,293 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 40 @ 2640.89774726626 | PnL: -3748.2824565149895
+2026-04-29 15:13:02,294 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 41 @ 2603.91758812649 on 2026-04-08 22:05:00
+2026-04-29 15:13:02,300 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 41 @ 2869.7617764540873 | PnL: -10899.611721431489
+2026-04-29 15:13:02,301 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 34 @ 2887.3826175720096 on 2026-04-09 00:15:00
+2026-04-29 15:13:02,319 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 34 @ 2885.1893184303203 | PnL: -74.57217081743602
+2026-04-29 15:13:02,320 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 35 @ 2862.425893069596 on 2026-04-09 06:55:00
+2026-04-29 15:13:02,339 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 35 @ 2985.5874365003274 | PnL: -4310.654020075599
+2026-04-29 15:13:02,340 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 32 @ 2962.7700375550726 on 2026-04-09 14:00:00
+2026-04-29 15:13:02,362 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 32 @ 2976.1607520223447 | PnL: 428.5028629527078
+2026-04-29 15:13:02,364 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 30 @ 3173.185197678181 on 2026-04-09 23:05:00
+2026-04-29 15:13:02,370 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 30 @ 2941.779420450637 | PnL: -6942.173316826311
+2026-04-29 15:13:02,371 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 31 @ 2979.0910201127663 on 2026-04-10 01:20:00
+2026-04-29 15:13:02,376 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 31 @ 3219.910419112902 | PnL: -7465.401369004214
+2026-04-29 15:13:02,377 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 27 @ 3210.808029255339 on 2026-04-10 02:55:00
+2026-04-29 15:13:02,388 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 27 @ 3115.0096605114904 | PnL: -2586.5559560839133
+2026-04-29 15:13:02,389 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 27 @ 3137.047356878818 on 2026-04-10 07:15:00
+2026-04-29 15:13:02,394 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 27 @ 3383.8846690798464 | PnL: -6664.607429427768
+2026-04-29 15:13:02,395 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 23 @ 3444.539376829835 on 2026-04-10 09:15:00
+2026-04-29 15:13:02,435 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 23 @ 3487.1845673293387 | PnL: 980.8393814885867
+2026-04-29 15:13:02,436 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 24 @ 3422.360052918305 on 2026-04-11 00:00:00
+2026-04-29 15:13:02,447 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 24 @ 3525.7610303175084 | PnL: -2481.623457580881
+2026-04-29 15:13:02,448 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 22 @ 3559.718973102412 on 2026-04-11 04:10:00
+2026-04-29 15:13:02,458 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 22 @ 3405.7426028817035 | PnL: -3387.4801448555827
+2026-04-29 15:13:02,461 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 22 @ 3549.3956457733934 on 2026-04-11 08:35:00
+2026-04-29 15:13:02,468 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 22 @ 3402.047941507958 | PnL: -3241.649493839578
+2026-04-29 15:13:02,469 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 23 @ 3244.956561030699 on 2026-04-11 11:25:00
+2026-04-29 15:13:02,511 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 23 @ 2848.540057485628 | PnL: 9117.579581536633
+2026-04-29 15:13:02,513 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 28 @ 2923.4601044612555 on 2026-04-12 04:35:00
+2026-04-29 15:13:02,565 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 28 @ 3347.4435003577605 | PnL: 11871.535085102141
+2026-04-29 15:13:02,566 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 27 @ 3343.2112301844422 on 2026-04-13 02:20:00
+2026-04-29 15:13:02,578 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 27 @ 3506.2541377258653 | PnL: -4402.158503618424
+2026-04-29 15:13:02,578 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 25 @ 3456.156375138891 on 2026-04-13 07:15:00
+2026-04-29 15:13:02,619 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 25 @ 3937.6063012819077 | PnL: 12036.248153575423
+2026-04-29 15:13:02,620 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 24 @ 3992.230802363471 on 2026-04-14 00:20:00
+2026-04-29 15:13:02,666 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 24 @ 3255.0053284983755 | PnL: 17693.41137276229
+2026-04-29 15:13:02,667 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 31 @ 3373.3461600963037 on 2026-04-14 19:45:00
+2026-04-29 15:13:02,673 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 31 @ 3089.852602523055 | PnL: -8788.300284770714
+2026-04-29 15:13:02,673 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 32 @ 3096.552489693445 on 2026-04-14 22:05:00
+2026-04-29 15:13:02,685 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 32 @ 3027.3054480645415 | PnL: 2215.9053321249085
+2026-04-29 15:13:02,688 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 36 @ 2849.4640631086727 on 2026-04-15 03:50:00
+2026-04-29 15:13:02,696 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 36 @ 3016.911854990021 | PnL: -6028.120507728534
+2026-04-29 15:13:02,697 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 32 @ 3029.841499276371 on 2026-04-15 06:55:00
+2026-04-29 15:13:02,709 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 32 @ 2956.024020887402 | PnL: -2362.159308447008
+2026-04-29 15:13:02,710 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 33 @ 2915.352381147094 on 2026-04-15 11:50:00
+2026-04-29 15:13:02,771 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 33 @ 2221.256682455734 | PnL: 22905.158056814886
+2026-04-29 15:13:02,772 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 52 @ 2171.4235104050335 on 2026-04-16 13:00:00
+2026-04-29 15:13:02,778 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 52 @ 2048.783259095398 | PnL: -6377.293068101044
+2026-04-29 15:13:02,779 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 53 @ 2031.65791636051 on 2026-04-16 15:25:00
+2026-04-29 15:13:02,789 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 53 @ 2197.9794908606523 | PnL: -8815.043448507544
+2026-04-29 15:13:02,790 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 47 @ 2174.275260569156 on 2026-04-16 19:25:00
+2026-04-29 15:13:02,808 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 47 @ 2074.071160651375 | PnL: -4709.5926961357145
+2026-04-29 15:13:02,809 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 47 @ 2086.0321698702087 on 2026-04-17 02:40:00
+2026-04-29 15:13:02,825 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 47 @ 2271.952339023093 | PnL: -8738.24795018556
+2026-04-29 15:13:02,826 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 40 @ 2309.773549593297 on 2026-04-17 09:10:00
+2026-04-29 15:13:02,839 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 40 @ 2178.6828260622456 | PnL: -5243.628941242059
+2026-04-29 15:13:02,840 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 41 @ 2188.405149978691 on 2026-04-17 14:25:00
+2026-04-29 15:13:02,869 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 41 @ 2018.874304726869 | PnL: 6950.764655324703
+2026-04-29 15:13:02,871 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 47 @ 2005.8382588147479 on 2026-04-18 02:35:00
+2026-04-29 15:13:02,927 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 47 @ 2229.543913876536 | PnL: 10514.16578790404
+2026-04-29 15:13:02,928 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 45 @ 2242.35401597994 on 2026-04-19 00:25:00
+2026-04-29 15:13:02,937 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 45 @ 2377.4116076644727 | PnL: -6077.591625803975
+2026-04-29 15:13:02,938 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 41 @ 2372.413658590042 on 2026-04-19 04:00:00
+2026-04-29 15:13:02,962 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 41 @ 2388.675891811092 | PnL: 666.7515620630452
+2026-04-29 15:13:02,963 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 41 @ 2373.100016728226 on 2026-04-19 13:05:00
+2026-04-29 15:13:02,993 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 41 @ 1934.096304934598 | PnL: 17999.152183538743
+2026-04-29 15:13:02,996 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 54 @ 2015.8633487448526 on 2026-04-20 01:50:00
+2026-04-29 15:13:02,999 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 54 @ 1891.1794860615746 | PnL: -6732.928584897012
+2026-04-29 15:13:03,002 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 57 @ 1852.2978733482885 on 2026-04-20 04:05:00
+2026-04-29 15:13:03,007 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 57 @ 1984.7433779172877 | PnL: -7549.393760432957
+2026-04-29 15:13:03,008 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 50 @ 1981.9733974538858 on 2026-04-20 06:00:00
+2026-04-29 15:13:03,038 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 50 @ 2020.0124829733618 | PnL: 1901.9542759737988
+2026-04-29 15:13:03,041 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 52 @ 1963.1263461046562 on 2026-04-20 19:30:00
+2026-04-29 15:13:03,065 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 52 @ 1881.8192902807734 | PnL: 4227.966902841907
+2026-04-29 15:13:03,065 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 56 @ 1859.327065560402 on 2026-04-21 04:25:00
+2026-04-29 15:13:03,069 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 56 @ 1779.700604406821 | PnL: -4459.081824600535
+2026-04-29 15:13:03,071 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 57 @ 1770.0349079536174 on 2026-04-21 06:25:00
+2026-04-29 15:13:03,109 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 57 @ 1563.1144988396654 | PnL: 11794.463319495266
+2026-04-29 15:13:03,109 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 70 @ 1555.675425467293 on 2026-04-21 22:00:00
+2026-04-29 15:13:03,138 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 70 @ 1672.72450359687 | PnL: 8193.43546907038
+2026-04-29 15:13:03,141 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 71 @ 1624.2897359868587 on 2026-04-22 10:50:00
+2026-04-29 15:13:03,160 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 71 @ 1653.984759290136 | PnL: -2108.346654532693
+2026-04-29 15:13:03,166 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 67 @ 1697.8291313490531 on 2026-04-22 20:30:00
+2026-04-29 15:13:03,188 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 67 @ 1694.0427934288275 | PnL: -253.68464065511557
+2026-04-29 15:13:03,189 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 67 @ 1682.2513312417739 on 2026-04-23 05:35:00
+2026-04-29 15:13:03,262 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 67 @ 1408.8533513148036 | PnL: 18317.664655107008
+2026-04-29 15:13:03,262 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 86 @ 1450.6435710153207 on 2026-04-24 09:35:00
+2026-04-29 15:13:03,266 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 86 @ 1271.0353060442485 | PnL: -15446.310787512211
+2026-04-29 15:13:03,267 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 90 @ 1276.3601690886146 on 2026-04-24 11:00:00
+2026-04-29 15:13:03,276 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 90 @ 1428.8302378881929 | PnL: -13722.306191962043
+2026-04-29 15:13:03,276 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 74 @ 1421.633346292196 on 2026-04-24 14:30:00
+2026-04-29 15:13:03,280 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 74 @ 1282.6188331299793 | PnL: -10287.073974004032
+2026-04-29 15:13:03,281 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 78 @ 1266.9993695805806 on 2026-04-24 16:00:00
+2026-04-29 15:13:03,312 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 78 @ 1227.1490822965886 | PnL: 3108.322408151374
+2026-04-29 15:13:03,313 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 82 @ 1237.2161797336753 on 2026-04-25 05:10:00
+2026-04-29 15:13:03,348 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 82 @ 1268.2213415764952 | PnL: 2542.423271111233
+2026-04-29 15:13:03,349 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 81 @ 1269.0596257203997 on 2026-04-25 19:25:00
+2026-04-29 15:13:03,363 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 81 @ 1302.9119789367414 | PnL: -2742.04061052368
+2026-04-29 15:13:03,386 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 77 @ 1312.4503180349816 on 2026-04-26 03:00:00
+2026-04-29 15:13:03,389 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 77 @ 1233.8261102065899 | PnL: -6054.064002786163
+2026-04-29 15:13:03,389 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 79 @ 1231.571037076867 on 2026-04-26 04:15:00
+2026-04-29 15:13:03,392 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 79 @ 1341.9627749221543 | PnL: -8720.947289777692
+2026-04-29 15:13:03,392 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 68 @ 1344.7969957898006 on 2026-04-26 05:05:00
+2026-04-29 15:13:03,402 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 68 @ 1318.2504531739648 | PnL: -1805.1648978768299
+2026-04-29 15:13:03,403 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 69 @ 1300.4600445867047 on 2026-04-26 09:05:00
+2026-04-29 15:13:03,409 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 69 @ 1381.2240974539598 | PnL: -5572.719647840597
+2026-04-29 15:13:03,410 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 63 @ 1358.241651908516 on 2026-04-26 11:25:00
+2026-04-29 15:13:03,454 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 63 @ 1352.7533626827885 | PnL: -345.76222122082527
+2026-04-29 15:13:03,456 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 63 @ 1356.510811325821 on 2026-04-27 01:40:00
+2026-04-29 15:13:03,545 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 63 @ 1284.3029477966484 | PnL: 4549.095402337869
+2026-04-29 15:13:03,549 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 70 @ 1279.911060664392 on 2026-04-27 21:50:00
+2026-04-29 15:13:03,583 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 70 @ 1337.1499915895627 | PnL: 4006.7251647619514
+2026-04-29 15:13:03,583 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 69 @ 1335.3713471928131 on 2026-04-28 07:30:00
+2026-04-29 15:13:03,585 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 69 @ 1450.5233154815057 | PnL: -7945.485811919791
+2026-04-29 15:13:03,586 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 59 @ 1458.1536542708886 on 2026-04-28 08:15:00
+2026-04-29 15:13:03,592 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 59 @ 1362.5674728611289 | PnL: -5639.584703175827
+2026-04-29 15:13:03,593 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 60 @ 1366.9876705954616 on 2026-04-28 10:45:00
+2026-04-29 15:13:03,599 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 60 @ 1427.2461688296394 | PnL: -3615.509894050665
+2026-04-29 15:13:03,600 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 54 @ 1479.7951706126098 on 2026-04-28 13:35:00
+2026-04-29 15:13:03,630 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 54 @ 1575.7999741266906 | PnL: 5184.259389760362
+2026-04-29 15:13:03,634 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: SELL 53 @ 1566.6628350516241 on 2026-04-29 02:15:00
+2026-04-29 15:13:03,652 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: COVER 53 @ 1536.1688303865672 | PnL: 1616.1822472480205
+2026-04-29 15:13:03,652 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest ENTRY: BUY 55 @ 1533.6770755206674 on 2026-04-29 09:35:00
+2026-04-29 15:13:03,662 - AlgorithmicTradingSystem.BacktestEngine - INFO - Backtest EXIT: SELL 55 @ 1472.8106545345697 | PnL: -3347.65315423537
+2026-04-29 15:13:07,227 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,241 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,241 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,417 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,419 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,449 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,541 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:07,630 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,070 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,162 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,279 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,598 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,714 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:08,949 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:08,961 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:22,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:22,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:22,606 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:22,781 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:22,905 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:23,014 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:23,034 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:23,144 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:23,336 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:23,508 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:23,689 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:23,807 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:37,372 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:37,487 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:37,604 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:37,788 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:37,908 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:38,033 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:38,087 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:38,160 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:38,275 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:38,409 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:38,538 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:38,657 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:52,367 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:52,587 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:52,695 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:52,801 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,039 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,043 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,153 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:13:53,194 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,311 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,426 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,650 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:13:53,758 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:07,365 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:07,500 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:07,617 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:07,731 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:07,950 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:08,029 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:08,079 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:08,170 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:08,389 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:08,498 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:08,626 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:08,949 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:22,377 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:22,603 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:22,718 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:22,825 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:22,935 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:23,028 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:23,161 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:23,266 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:23,382 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:23,494 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:23,611 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:23,718 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:37,364 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:37,494 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:37,604 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:37,724 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:37,839 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:38,064 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:38,066 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:38,321 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:38,438 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:38,548 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:38,763 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:38,868 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:52,365 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:52,475 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:52,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:52,709 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:52,819 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:52,941 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:14:53,036 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:14:53,147 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:53,259 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:53,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:53,492 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:14:53,605 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:15:07,381 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:15:07,602 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:07,722 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:07,875 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:07,985 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:08,094 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:15:22,367 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:15:22,480 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:22,596 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:22,720 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:22,939 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:23,051 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:15:37,364 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:15:37,470 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:37,581 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:37,695 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:37,806 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:37,919 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:15:38,037 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:15:38,143 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:38,371 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:38,481 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:38,589 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:38,805 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:15:52,377 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:15:52,592 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:52,702 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:52,811 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:52,921 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:15:53,136 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:07,371 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:07,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:08,252 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:08,258 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:08,427 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:08,566 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:08,686 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:09,462 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:09,589 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:09,762 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:09,893 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:10,071 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:22,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:22,489 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:22,606 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:22,712 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:22,828 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:22,938 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:23,034 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:23,147 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:23,263 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:23,446 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:23,578 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:23,692 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:37,383 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:37,506 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:37,703 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:37,832 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:37,961 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:38,027 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:38,085 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:38,197 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:38,316 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:38,450 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:38,565 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:38,684 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:52,364 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:52,481 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:52,600 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:52,719 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:52,837 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:52,950 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:16:53,023 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:16:53,137 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:53,250 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:53,379 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:53,484 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:16:53,594 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:17:07,380 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:17:07,493 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:07,600 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:07,720 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:07,831 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:07,938 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:17:08,041 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:17:08,162 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:08,273 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:08,385 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:08,498 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:08,681 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:17:22,371 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:17:22,477 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:22,584 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:22,759 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:22,869 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:23,001 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:17:37,371 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:17:37,481 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:37,593 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:37,704 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:37,889 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:38,000 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:17:38,031 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:17:38,208 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:38,315 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:38,423 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:38,532 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:38,638 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:17:52,363 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:17:52,551 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:52,663 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:52,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:52,958 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:17:53,073 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:18:07,375 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:18:07,507 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:07,691 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:07,810 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:07,917 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:08,024 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:18:22,375 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:18:22,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:22,586 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:22,702 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:22,809 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:22,912 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:18:37,367 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:18:37,477 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:37,591 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:37,700 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:37,807 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:37,915 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:18:38,038 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:18:38,150 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:38,257 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:38,365 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:38,537 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:38,651 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:18:52,458 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:18:52,640 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:52,823 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:52,930 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:53,039 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:18:53,144 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:19:07,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:19:07,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:07,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:07,715 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:07,838 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:08,028 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:19:22,370 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:19:22,512 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:22,624 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:22,731 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:22,835 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:22,943 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:19:37,366 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:19:37,474 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:37,649 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:37,760 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:37,950 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:38,026 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:19:38,066 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:19:38,314 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:38,430 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:38,551 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:38,659 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:38,777 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:19:52,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:19:52,510 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:52,625 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:52,737 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:52,851 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:19:52,969 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:20:07,380 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:20:07,506 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:07,621 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:07,730 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:07,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:07,970 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:20:22,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:20:22,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:22,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:22,722 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:22,835 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:22,966 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:20:37,375 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:20:37,562 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:37,705 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:37,819 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:37,945 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:38,070 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:20:38,074 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:20:38,224 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:38,361 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:38,585 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:38,806 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:38,919 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:20:52,376 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:20:52,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:52,734 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:52,950 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:53,058 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:20:53,168 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:21:07,377 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:21:07,484 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:07,603 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:07,714 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:07,826 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:08,050 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:21:22,362 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:21:22,473 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:22,582 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:22,690 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:22,805 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:22,921 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:21:37,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:21:37,481 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:37,593 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:37,705 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:37,823 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:37,946 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:21:38,028 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:21:38,150 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:38,264 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:38,382 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:38,507 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:38,619 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:21:52,378 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:21:52,487 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:52,615 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:52,732 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:52,848 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:21:52,963 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:22:07,377 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:22:07,493 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:07,617 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:07,734 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:07,851 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:08,083 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:22:22,367 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:22:22,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:22,734 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:22,848 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:22,953 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:23,060 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:22:37,367 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:22:37,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:37,587 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:37,703 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:37,931 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:38,045 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:22:38,052 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:22:38,192 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:38,310 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:38,421 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:38,642 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:38,748 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:22:52,364 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:22:52,473 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:52,701 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:52,985 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:53,093 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:22:53,204 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:23:07,378 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:23:07,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:07,593 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:07,716 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:07,829 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:07,999 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:23:22,370 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:23:22,481 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:22,590 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:22,815 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:22,929 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:23,050 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:23:37,378 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:23:37,602 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:37,826 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:37,942 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,070 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,073 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,205 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:23:38,326 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,441 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,559 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,674 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:38,716 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:23:52,379 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:23:52,496 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:52,726 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:52,847 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:52,969 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:23:53,084 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:24:07,370 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:24:07,593 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:07,715 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:07,832 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:07,949 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:08,064 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:24:22,364 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:24:22,472 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:22,588 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:22,810 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:23,036 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:23,164 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:24:37,380 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:24:37,504 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:37,732 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:37,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:37,961 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:38,032 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:24:38,081 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:24:38,205 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:38,319 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:38,435 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:38,547 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:38,737 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:24:52,370 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:24:52,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:52,610 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:52,728 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:52,838 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:24:52,951 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:25:07,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:25:07,488 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:07,599 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:07,714 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:07,826 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:07,934 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:25:22,369 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:25:22,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:22,604 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:22,722 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:22,837 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:22,970 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:25:37,372 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:25:37,490 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:37,600 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:37,713 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:37,835 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:37,952 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:25:38,027 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:25:38,139 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:38,252 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:38,366 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:38,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:38,594 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:25:52,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:25:52,476 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:52,588 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:52,711 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:52,842 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:25:52,951 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:26:07,363 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:26:07,477 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:07,595 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:07,730 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:07,851 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:07,961 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:26:22,375 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:26:22,486 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:22,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:22,713 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:22,823 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:22,936 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:26:37,369 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:26:37,486 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:37,677 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:37,786 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:37,896 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:38,010 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:26:38,037 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:26:38,150 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:38,284 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:38,404 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:38,515 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:38,633 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:26:52,364 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:26:52,476 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:52,585 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:52,702 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:52,884 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:26:52,994 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:27:07,376 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:27:07,582 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:07,696 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:07,811 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:07,918 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:08,026 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:27:22,372 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:27:22,486 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:22,600 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:22,713 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:22,833 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:22,950 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:27:37,374 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:27:37,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,032 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,211 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,394 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,501 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,606 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,655 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,710 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:27:38,770 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,884 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:38,992 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:27:52,377 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:27:52,488 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:52,594 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:52,721 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:52,833 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:27:52,943 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:28:07,372 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:28:07,487 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:07,604 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:07,722 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:07,833 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:07,949 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:28:22,378 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:28:22,489 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:22,603 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:22,711 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:22,818 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:22,928 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:28:37,373 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:28:37,489 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:37,603 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:37,780 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:37,910 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:38,020 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:28:38,039 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:28:38,154 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:38,335 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:38,490 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:38,612 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:38,727 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:28:52,382 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:28:52,495 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:52,611 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:52,727 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:52,850 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:28:53,029 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:29:07,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:29:07,484 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:07,603 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:07,721 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:07,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:07,976 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:29:22,371 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:29:22,506 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:22,621 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:22,734 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:22,852 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:22,961 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:29:37,372 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:29:37,483 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:37,597 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:37,713 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:37,905 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:38,047 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:29:38,057 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:29:38,199 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:38,418 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:38,634 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:38,863 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:39,090 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:29:52,366 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:29:52,484 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:52,595 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:52,707 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:52,822 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:29:52,967 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:30:07,369 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:30:07,487 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:07,603 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:07,723 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:07,835 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:07,950 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:30:22,373 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:30:22,488 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:22,608 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:22,733 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:22,847 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:22,964 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:30:37,368 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:30:37,484 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:37,708 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:37,817 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:37,943 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:38,036 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-04-24 to None
+2026-04-29 15:30:38,163 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
+2026-04-29 15:30:38,198 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for RELIANCE.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:38,343 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for TCS.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:38,454 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for HDFCBANK.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:38,572 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for INFY.NS (5m) from 2026-04-24 to None
+2026-04-29 15:30:38,686 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock historical data for ^BSESN
