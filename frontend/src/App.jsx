@@ -369,6 +369,7 @@ function App() {
                   <option value="HDFCBANK.NS">HDFCBANK</option>
                   <option value="INFY.NS">INFY</option>
                   <option value="^NSEI">NIFTY 50</option>
+                  <option value="BSE:SENSEX">SENSEX</option>
                 </select>
               </div>
               
@@ -547,6 +548,7 @@ function App() {
                 <option value="HDFCBANK.NS">HDFCBANK</option>
                 <option value="INFY.NS">INFY</option>
                 <option value="^NSEI">NIFTY 50</option>
+                <option value="BSE:SENSEX">SENSEX</option>
               </select>
             </div>
 
