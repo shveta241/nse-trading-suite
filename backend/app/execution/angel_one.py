@@ -4,12 +4,12 @@ import time
 import requests
 import pandas as pd
 
-from .base import BaseExecutor
+from .base import Executor
 import pyotp
 
 logger = logging.getLogger(__name__)
 
-class AngelOneExecutor(BaseExecutor):
+class AngelOneExecutor(Executor):
     """
     Executor for Angel One using SmartAPI.
     Supports Equity and Index Option (Expiry) trading.
@@ -87,11 +87,12 @@ class AngelOneExecutor(BaseExecutor):
                 return {"token": item['token'], "trading_symbol": item['symbol']}
         return None
 
-    def execute_order(self, symbol: str, quantity: int, order_type: str, price: Optional[float] = None) -> Dict[str, Any]:
+    def place_order(self, symbol: str, quantity: int, side: str, order_type: str = "MARKET", price: Optional[float] = None) -> Dict[str, Any]:
         """
         Executes an order on Angel One.
-        order_type: 'BUY' or 'SELL'
+        side: 'BUY' or 'SELL'
         """
+        order_type_val = side.upper() # Map 'side' to Angel's transactiontype
         if not self.is_connected:
             logger.error("Not connected to Angel One. Cannot execute order.")
             return {"status": "error", "message": "Not connected"}
@@ -114,22 +115,15 @@ class AngelOneExecutor(BaseExecutor):
                 atm_strike = round(ltp / strike_step) * strike_step
                 
                 # 2. Determine Option Type (BUY -> CE, SELL -> PE)
-                opt_type = "CE" if order_type.upper() == "BUY" else "PE"
+                opt_type = "CE" if order_type_val == "BUY" else "PE"
                 
-                # 3. Find latest expiry token (Simplified search)
-                # In production, we should filter by specific expiry date. 
-                # For today's expiry, we search for SENSEX + STRIKE + CE/PE
+                # 3. Find latest expiry token
                 search_pattern = f"{token_info['expiry_prefix']}{int(atm_strike)}{opt_type}"
                 option_exchange = "BFO" if token_info["exchange"] == "BSE" else "NFO"
                 
                 opt_data = self._get_option_token(search_pattern, option_exchange)
                 if not opt_data:
-                    # Try alternative pattern (some symbols have month/date)
-                    # For simplicity in this demo, we'll try a broader search if exact fails
-                    logger.warning(f"Exact option match not found for {search_pattern}. Trying broad search...")
-                    search_pattern = f"{token_info['expiry_prefix']}"
-                    # This would ideally be more precise
-                    return {"status": "error", "message": f"Could not find exact ATM Option for {atm_strike} {opt_type}. Please check expiry symbols."}
+                    return {"status": "error", "message": f"Could not find exact ATM Option for {atm_strike} {opt_type}."}
                 
                 # Update order params for Option
                 trading_symbol = opt_data["trading_symbol"]
@@ -151,10 +145,10 @@ class AngelOneExecutor(BaseExecutor):
                 "variety": "NORMAL",
                 "tradingsymbol": trading_symbol,
                 "symboltoken": symbol_token,
-                "transactiontype": order_type.upper(),
+                "transactiontype": order_type_val,
                 "exchange": exchange,
                 "ordertype": "MARKET" if price is None else "LIMIT",
-                "producttype": "INTRADAY" if exchange == "NSE" else "CARRYOVER", # BSE Options often use CARRYOVER/NORMAL
+                "producttype": "INTRADAY" if exchange == "NSE" else "CARRYOVER",
                 "duration": "DAY",
                 "price": price if price else 0,
                 "squareoff": "0",
@@ -173,6 +167,16 @@ class AngelOneExecutor(BaseExecutor):
         except Exception as e:
             logger.error(f"Order execution failed: {str(e)}")
             return {"status": "error", "message": str(e)}
+
+    def cancel_order(self, order_id: str) -> bool:
+        if not self.is_connected: return False
+        try:
+            res = self.smartApi.cancelOrder("NORMAL", order_id)
+            return res.get('status') == True
+        except: return False
+
+    def get_order_status(self, order_id: str) -> Dict[str, Any]:
+        return {"status": "unknown", "order_id": order_id}
 
     def get_positions(self) -> Dict[str, Any]:
         if not self.is_connected:

@@ -113,10 +113,10 @@ async def auto_trade_loop():
                                     qty = viability.get('lots', 1) * lot_size
                                     
                                     # Execute real order
-                                    real_res = real_executor.execute_order(
+                                    real_res = real_executor.place_order(
                                         symbol=symbol,
                                         quantity=qty,
-                                        order_type=side,
+                                        side=side,
                                         price=price
                                     )
                                     
@@ -514,10 +514,10 @@ def place_order(request: OrderRequest):
 
     try:
         # Place real order via Angel One
-        real_res = real_executor.execute_order(
+        real_res = real_executor.place_order(
             symbol=request.symbol,
             quantity=request.quantity,
-            order_type=request.side,
+            side=request.side,
             price=request.price
         )
         
