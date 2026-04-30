@@ -9,6 +9,7 @@ import asyncio
 
 from app.data.yfinance_client import YFinanceClient
 from app.data.mock_client import MockClient
+from app.data.angel_client import AngelOneClient
 from app.indicators.engine import IndicatorEngine
 from app.strategies.vwap_rsi_ema import VwapRsiEmaStrategy
 from app.strategies.probabilistic_engine import ProbabilisticEngineStrategy
@@ -35,6 +36,7 @@ app.add_middleware(
 
 
 # Shared in-memory components
+angel_client = AngelOneClient()
 yfinance_client = YFinanceClient()
 mock_client = MockClient()
 mock_executor = MockExecutor(initial_capital=5000.0) # Updated for low capital user
@@ -65,7 +67,10 @@ async def auto_trade_loop():
                     start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
                     
                     yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
-                    df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
+                    # Try Angel One first
+                    df = angel_client.fetch_historical_data(symbol, '5m', start_date)
+                    if df.empty:
+                        df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
                         
                     if df.empty:
                         df = mock_client.fetch_historical_data(symbol, '5m', start_date)
@@ -139,8 +144,14 @@ def get_autotrade_status():
 @app.get("/api/quote")
 def get_quote(symbol: str = Query(..., description="NSE Stock Symbol (e.g., RELIANCE.NS)")):
     yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
+    
+    # Try Angel One
+    quote = angel_client.fetch_live_quote(symbol)
+    
     # Try YFinance
-    quote = yfinance_client.fetch_live_quote(yf_symbol)
+    if not quote or quote.get('last_price') == 0:
+        quote = yfinance_client.fetch_live_quote(yf_symbol)
+        
     if not quote or quote.get('last_price') == 0:
         # Fallback to Mock
         logger.info("Falling back to MockClient for quote")
@@ -170,12 +181,19 @@ def run_backtest(request: BacktestRequest):
         try:
             yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
             # Fetch historical data
-            df = yfinance_client.fetch_historical_data(
-                symbol=yf_symbol,
+            df = angel_client.fetch_historical_data(
+                symbol=symbol,
                 interval=request.interval,
                 start_date=request.start_date,
                 end_date=request.end_date
             )
+            if df.empty:
+                df = yfinance_client.fetch_historical_data(
+                    symbol=yf_symbol,
+                    interval=request.interval,
+                    start_date=request.start_date,
+                    end_date=request.end_date
+                )
             
             if df.empty:
                 # Try Mock fallback
@@ -256,7 +274,10 @@ def get_indicators(symbol: str, interval: str = '5m'):
     # Default to past 5 days for intraday intervals
     start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
     yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
-    df = yfinance_client.fetch_historical_data(yf_symbol, interval, start_date)
+    df = angel_client.fetch_historical_data(symbol, interval, start_date)
+    if df.empty:
+        df = yfinance_client.fetch_historical_data(yf_symbol, interval, start_date)
+        
     if df.empty:
         df = mock_client.fetch_historical_data(symbol, interval, start_date)
 
@@ -297,7 +318,9 @@ def get_live_signals(expiry_target: Optional[str] = None):
         start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
         
         yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
-        df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
+        df = angel_client.fetch_historical_data(symbol, '5m', start_date)
+        if df.empty:
+            df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
             
         if df.empty:
             df = mock_client.fetch_historical_data(symbol, '5m', start_date)
@@ -391,7 +414,9 @@ def get_advanced_analysis(symbol: str = Query(..., description="NSE Stock Symbol
     # Fetch tiny historical chunk to calculate tech analysis
     start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
     yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
-    df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
+    df = angel_client.fetch_historical_data(symbol, '5m', start_date)
+    if df.empty:
+        df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
     
     if df.empty:
         df = mock_client.fetch_historical_data(symbol, '5m', start_date)
