@@ -1,3 +1,12 @@
+import sys
+import subprocess
+
+# Failsafe: Programmatically install missing dependencies for Render
+try:
+    import logzero
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "logzero", "websocket-client"])
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
