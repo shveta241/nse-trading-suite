@@ -25,20 +25,14 @@ class AngelOneClient(DataFetcher):
         self.smartApi = None
         self.is_connected = False
         
-        # Token mapping for Angel One (Exchange: Token)
-        # ^BSESN -> BSE: 999901
-        # ^NSEI -> NSE: 26000
-        # RELIANCE -> NSE: 2885
-        # TCS -> NSE: 11536
-        # HDFCBANK -> NSE: 1333
-        # INFY -> NSE: 1594
         self.token_map = {
-            "^BSESN": {"exchange": "BSE", "token": "999901"},
-            "^NSEI": {"exchange": "NSE", "token": "26000"},
-            "RELIANCE.NS": {"exchange": "NSE", "token": "2885"},
-            "TCS.NS": {"exchange": "NSE", "token": "11536"},
-            "HDFCBANK.NS": {"exchange": "NSE", "token": "1333"},
-            "INFY.NS": {"exchange": "NSE", "token": "1594"},
+            "BSE:SENSEX": {"exchange": "BSE", "token": "99919000", "trading_symbol": "SENSEX"},
+            "^BSESN": {"exchange": "BSE", "token": "99919000", "trading_symbol": "SENSEX"},
+            "^NSEI": {"exchange": "NSE", "token": "26000", "trading_symbol": "NIFTY"},
+            "RELIANCE.NS": {"exchange": "NSE", "token": "2885", "trading_symbol": "RELIANCE-EQ"},
+            "TCS.NS": {"exchange": "NSE", "token": "11536", "trading_symbol": "TCS-EQ"},
+            "HDFCBANK.NS": {"exchange": "NSE", "token": "1333", "trading_symbol": "HDFCBANK-EQ"},
+            "INFY.NS": {"exchange": "NSE", "token": "1594", "trading_symbol": "INFY-EQ"},
         }
         
         self.connect()
@@ -134,8 +128,9 @@ class AngelOneClient(DataFetcher):
         try:
             exchange = token_info["exchange"]
             token = token_info["token"]
+            trading_symbol = token_info.get("trading_symbol", symbol.replace(".NS", "").replace("^", ""))
             
-            response = self.smartApi.ltpData(exchange, symbol.replace(".NS", "").replace("^", ""), token)
+            response = self.smartApi.ltpData(exchange, trading_symbol, token)
             
             if response and response.get('status'):
                 data = response['data']
