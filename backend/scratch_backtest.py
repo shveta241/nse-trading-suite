@@ -40,6 +40,12 @@ def run():
     print(f"Total Trades: {results['total_trades']}")
     print(f"Win Rate: {results['win_rate'] * 100:.2f}%")
     print(f"Sharpe Ratio: {results['sharpe_ratio']:.2f}")
+    
+    print("\nExit Reasons Breakdown:")
+    reasons = [t.get('exit_reason') for t in results['trades']]
+    from collections import Counter
+    for reason, count in Counter(reasons).items():
+        print(f" - {reason}: {count}")
     print("="*40)
 
 if __name__ == "__main__":
