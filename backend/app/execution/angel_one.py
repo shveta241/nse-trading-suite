@@ -19,6 +19,16 @@ class AngelOneExecutor(BaseExecutor):
         self.smartApi = None
         self.is_connected = False
         
+        self.token_map = {
+            "BSE:SENSEX": {"exchange": "BSE", "token": "99919000", "trading_symbol": "SENSEX", "is_index": True},
+            "^BSESN": {"exchange": "BSE", "token": "99919000", "trading_symbol": "SENSEX", "is_index": True},
+            "^NSEI": {"exchange": "NSE", "token": "26000", "trading_symbol": "NIFTY", "is_index": True},
+            "RELIANCE.NS": {"exchange": "NSE", "token": "2885", "trading_symbol": "RELIANCE-EQ", "is_index": False},
+            "TCS.NS": {"exchange": "NSE", "token": "11536", "trading_symbol": "TCS-EQ", "is_index": False},
+            "HDFCBANK.NS": {"exchange": "NSE", "token": "1333", "trading_symbol": "HDFCBANK-EQ", "is_index": False},
+            "INFY.NS": {"exchange": "NSE", "token": "1594", "trading_symbol": "INFY-EQ", "is_index": False},
+        }
+        
         try:
             from SmartApi import SmartConnect
             self.smartApi = SmartConnect(api_key=self.api_key)
@@ -54,15 +64,21 @@ class AngelOneExecutor(BaseExecutor):
             logger.error("Not connected to Angel One. Cannot execute order.")
             return {"status": "error", "message": "Not connected"}
             
+        token_info = self.token_map.get(symbol)
+        if not token_info:
+            return {"status": "error", "message": f"Symbol {symbol} not supported for real execution yet."}
+
+        if token_info.get("is_index"):
+            logger.warning(f"Attempted to trade index directly: {symbol}. Trading options requires dynamic strike selection.")
+            return {"status": "error", "message": f"Cannot trade Index {symbol} directly in Cash market. Options trading logic required."}
+
         try:
-            # Need to fetch the proper token for the symbol, this is a simplified version
-            # Usually you have to look up the token from Angel One's instrument list
             orderparams = {
                 "variety": "NORMAL",
-                "tradingsymbol": symbol,
-                "symboltoken": "3045", # Placeholder token, needs dynamic lookup
+                "tradingsymbol": token_info["trading_symbol"],
+                "symboltoken": token_info["token"],
                 "transactiontype": order_type.upper(),
-                "exchange": "NSE",
+                "exchange": token_info["exchange"],
                 "ordertype": "MARKET" if price is None else "LIMIT",
                 "producttype": "INTRADAY",
                 "duration": "DAY",
@@ -72,8 +88,13 @@ class AngelOneExecutor(BaseExecutor):
                 "quantity": quantity
             }
             orderId = self.smartApi.placeOrder(orderparams)
-            logger.info(f"Order placed successfully: {orderId}")
-            return {"status": "success", "order_id": orderId}
+            
+            if orderId and isinstance(orderId, str):
+                logger.info(f"Order placed successfully: {orderId}")
+                return {"status": "success", "order_id": orderId}
+            else:
+                logger.error(f"Order placement failed: {orderId}")
+                return {"status": "error", "message": str(orderId)}
             
         except Exception as e:
             logger.error(f"Order execution failed: {str(e)}")

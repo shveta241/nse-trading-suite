@@ -17,9 +17,10 @@ from app.data.option_chain import OptionChainAnalyzer
 from app.data.sentiment_engine import SentimentEngine
 from app.backtester.engine import BacktestEngine
 from app.execution.mock_executor import MockExecutor
+from app.execution.angel_one import AngelOneExecutor
 from app.execution.low_capital_manager import LowCapitalManager
 from app.utils.logger import get_logger
-
+import os
 
 logger = get_logger("Main")
 
@@ -40,6 +41,14 @@ angel_client = AngelOneClient()
 yfinance_client = YFinanceClient()
 mock_client = MockClient()
 mock_executor = MockExecutor(initial_capital=5000.0) # Updated for low capital user
+real_executor = AngelOneExecutor(
+    api_key=os.getenv("ANGEL_API_KEY"),
+    client_id=os.getenv("ANGEL_CLIENT_ID"),
+    password=os.getenv("ANGEL_PASSWORD"),
+    totp_secret=os.getenv("ANGEL_TOTP_SECRET")
+)
+real_executor.connect()
+
 low_capital_manager = LowCapitalManager(initial_capital=5000.0)
 
 # Global flag for the auto-trading loop
@@ -92,14 +101,28 @@ async def auto_trade_loop():
                                 # Prevent duplicate positions in the same direction
                                 current_pos = mock_executor.positions.get(symbol, 0)
                                 if (side == "BUY" and current_pos <= 0) or (side == "SELL" and current_pos >= 0):
-                                    mock_executor.place_order(
+                                    qty = viability.get('lots', 1) * lot_size
+                                    
+                                    # Execute real order
+                                    real_res = real_executor.execute_order(
                                         symbol=symbol,
-                                        quantity=viability.get('lots', 1) * lot_size,
-                                        side=side,
-                                        order_type="MARKET",
+                                        quantity=qty,
+                                        order_type=side,
                                         price=price
                                     )
-                                    logger.info(f"[AUTO-TRADE EXECUTED] {side} {symbol} @ {price}")
+                                    
+                                    if real_res.get("status") == "success":
+                                        # Record in UI state manager
+                                        mock_executor.place_order(
+                                            symbol=symbol,
+                                            quantity=qty,
+                                            side=side,
+                                            order_type="MARKET",
+                                            price=price
+                                        )
+                                        logger.info(f"[REAL AUTO-TRADE EXECUTED] {side} {symbol} @ {price} | OrderID: {real_res.get('order_id')}")
+                                    else:
+                                        logger.error(f"[AUTO-TRADE REJECTED] {symbol}: {real_res.get('message')}")
             except Exception as e:
                 logger.error(f"Auto-trade loop error: {e}")
                 
@@ -481,6 +504,18 @@ def place_order(request: OrderRequest):
             request.price = 100.0
 
     try:
+        # Place real order via Angel One
+        real_res = real_executor.execute_order(
+            symbol=request.symbol,
+            quantity=request.quantity,
+            order_type=request.side,
+            price=request.price
+        )
+        
+        if real_res.get("status") != "success":
+            raise HTTPException(status_code=400, detail=real_res.get("message", "Order execution failed"))
+
+        # Keep mock executor updated for the UI dashboard (Shadow State)
         order = mock_executor.place_order(
             symbol=request.symbol,
             quantity=request.quantity,
@@ -488,7 +523,7 @@ def place_order(request: OrderRequest):
             order_type=request.order_type,
             price=request.price
         )
-        return {"status": "success", "order": order}
+        return {"status": "success", "order": order, "broker_order_id": real_res.get("order_id")}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
