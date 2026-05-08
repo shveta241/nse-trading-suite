@@ -4,8 +4,9 @@ import subprocess
 # Failsafe: Programmatically install missing dependencies for Render
 try:
     import logzero
+    from scipy.stats import norm
 except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "logzero", "websocket-client"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "logzero", "websocket-client", "scipy"])
 
 import math
 from scipy.stats import norm
