@@ -7,6 +7,35 @@ try:
 except ImportError:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "logzero", "websocket-client"])
 
+import math
+from scipy.stats import norm
+
+def calculate_greeks(S, K, T, r, sigma, option_type="CE"):
+    """
+    S: Current Price, K: Strike, T: Time to Expiry (years), r: Risk-free rate, sigma: Volatility
+    """
+    if T <= 0: return {"delta": 0, "theta": 0, "gamma": 0, "vega": 0}
+    
+    d1 = (math.log(S / K) + (r + 0.5 * sigma ** 2) * T) / (sigma * math.sqrt(T))
+    d2 = d1 - sigma * math.sqrt(T)
+    
+    if option_type == "CE":
+        delta = norm.cdf(d1)
+        theta = -(S * norm.pdf(d1) * sigma) / (2 * math.sqrt(T)) - r * K * math.exp(-r * T) * norm.cdf(d2)
+    else:
+        delta = norm.cdf(d1) - 1
+        theta = -(S * norm.pdf(d1) * sigma) / (2 * math.sqrt(T)) + r * K * math.exp(-r * T) * norm.cdf(-d2)
+        
+    gamma = norm.pdf(d1) / (S * sigma * math.sqrt(T))
+    vega = S * norm.pdf(d1) * math.sqrt(T)
+    
+    return {
+        "delta": round(delta, 3),
+        "theta": round(theta / 365, 3), # Daily theta
+        "gamma": round(gamma, 5),
+        "vega": round(vega / 100, 3)
+    }
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -34,6 +63,47 @@ import os
 logger = get_logger("Main")
 
 app = FastAPI(title="NSE Algorithmic Trading System", version="1.0.0")
+
+@app.get("/api/analytics/greeks")
+def get_live_greeks(symbol: str = Query(...)):
+    try:
+        # 1. Get Live Price
+        quote = get_quote(symbol)
+        S = quote.get('last_price', 0)
+        if S == 0: return {"error": "Could not get live price"}
+        
+        # 2. Get Option Chain for Volatility and ATM Strike
+        chain = angel_client.fetch_option_chain(symbol)
+        if not chain or 'data' not in chain: return {"error": "Option chain unavailable"}
+        
+        # Select ATM
+        atm_strike = round(S / 50) * 50 if "NIFTY" in symbol else round(S / 100) * 100
+        
+        # Placeholder for IV (implied volatility) - usually around 12-20% for Nifty
+        iv = 0.15 
+        T = 4 / 365 # Approx 4 days to expiry
+        r = 0.07 # 7% risk free rate
+        
+        ce_greeks = calculate_greeks(S, atm_strike, T, r, iv, "CE")
+        pe_greeks = calculate_greeks(S, atm_strike, T, r, iv, "PE")
+        
+        # Calculate PCR
+        call_oi = sum(item.get('call_oi', 0) for item in chain['data'])
+        put_oi = sum(item.get('put_oi', 0) for item in chain['data'])
+        pcr = put_oi / call_oi if call_oi > 0 else 0
+        
+        return {
+            "symbol": symbol,
+            "ltp": S,
+            "strike": atm_strike,
+            "pcr": round(pcr, 2),
+            "sentiment": "BULLISH" if pcr > 1.1 else "BEARISH" if pcr < 0.9 else "NEUTRAL",
+            "ce": ce_greeks,
+            "pe": pe_greeks
+        }
+    except Exception as e:
+        logger.error(f"Greeks calculation error: {e}")
+        return {"error": str(e)}
 
 # Enable CORS for the React frontend
 app.add_middleware(
@@ -146,6 +216,10 @@ async def auto_trade_loop():
                                             order_type="MARKET",
                                             price=actual_price
                                         )
+                                        # SEND TELEGRAM ALERT
+                                        from app.utils.notifier import notifier
+                                        notifier.send_trade_alert(actual_sym, side, actual_price, "AI_PROBABILISTIC_V2")
+                                        
                                         logger.info(f"[REAL AUTO-TRADE EXECUTED] {side} {actual_sym} @ {actual_price} | OrderID: {real_res.get('order_id')}")
                                     else:
                                         logger.error(f"[AUTO-TRADE REJECTED] {symbol}: {real_res.get('message')}")
@@ -687,6 +761,13 @@ def get_positions():
         # Accumulate corrected PNL
         total_pnl += display_pnl
         
+        # Trailing SL Visualization (Trails by 3% from LTP when in profit)
+        tsl_price = avg_price * 0.95 if qty > 0 else avg_price * 1.05
+        if qty > 0 and ltp > avg_price:
+            tsl_price = max(tsl_price, ltp * 0.97)
+        elif qty < 0 and ltp < avg_price:
+            tsl_price = min(tsl_price, ltp * 1.03)
+
         detailed_positions.append({
             "symbol": symbol,
             "display_name": symbol.replace(".NS", ""),
@@ -696,7 +777,8 @@ def get_positions():
             "avg_price": avg_price,
             "ltp": ltp,
             "pnl": display_pnl,
-            "pnl_pct": display_pnl_pct
+            "pnl_pct": display_pnl_pct,
+            "tsl_price": round(tsl_price, 2)
         })
 
     # Enrich Order History with types and strikes
