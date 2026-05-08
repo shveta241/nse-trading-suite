@@ -235,10 +235,11 @@ async def startup_event():
 
 class BacktestRequest(BaseModel):
     symbol: str
-    interval: str = '5m'
+    interval: str = "5m"
     start_date: str
     end_date: Optional[str] = None
     capital: float = 100000.0
+    strategy_name: str = "VWAP_RSI"
 
 class LoginRequest(BaseModel):
     username: str
@@ -341,9 +342,19 @@ def run_backtest(request: BacktestRequest):
             df_with_indicators = IndicatorEngine.apply_indicators(df)
             
             # Run Backtest
-            strategy = VwapRsiEmaStrategy()
+            if request.strategy_name == "PROBABILISTIC":
+                strategy = ProbabilisticEngineStrategy()
+            elif request.strategy_name == "SCALPING":
+                from app.strategies.scalping import NiftyScalpingStrategy
+                strategy = NiftyScalpingStrategy()
+            else:
+                strategy = VwapRsiEmaStrategy()
+                
             engine = BacktestEngine(initial_capital=request.capital)
             results = engine.run(strategy, df_with_indicators)
+            
+            # Capture equity curve for the last symbol or combined
+            last_equity_curve = results.get('equity_curve', [])
             
             # Enrich trades
             for t in results.get('trades', []):
@@ -369,12 +380,11 @@ def run_backtest(request: BacktestRequest):
             continue
 
     if not all_trades and len(symbols) == 1:
-        raise HTTPException(status_code=400, detail=f"Could not fetch data or run backtest for {symbols[0]}.")
+        raise HTTPException(status_code=400, detail=f"Could not fetch data or run backtest for {symbols[0]}. Check internet or symbol name.")
     elif not all_trades:
         raise HTTPException(status_code=400, detail="Could not fetch data or run backtest for any of the requested symbols.")
 
     # Aggregate metrics
-    final_equity = request.capital + total_pnl
     win_rate = win_trades / total_trades if total_trades > 0 else 0.0
     avg_sharpe = sum(sharpe_ratios) / len(sharpe_ratios) if sharpe_ratios else 0.0
 
@@ -385,16 +395,16 @@ def run_backtest(request: BacktestRequest):
         pass
 
     return {
-        "symbol": request.symbol,
         "metrics": {
             "initial_capital": request.capital,
-            "final_equity": final_equity,
+            "final_equity": request.capital + total_pnl,
+            "total_pnl": total_pnl,
             "total_trades": total_trades,
             "win_rate": win_rate,
-            "total_pnl": total_pnl,
             "sharpe_ratio": avg_sharpe
         },
-        "trades": all_trades[:100]  # limit payload
+        "trades": all_trades,
+        "equity_curve": last_equity_curve
     }
 
 @app.get("/api/indicators")

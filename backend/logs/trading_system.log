@@ -15992,3 +15992,622 @@
 2026-05-08 16:01:26,874 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
 2026-05-08 16:01:26,885 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
 2026-05-08 16:01:27,687 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:34:04,068 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:34:04,068 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:34:08,012 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:34:08,891 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:34:08,891 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:34:12,633 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:34:12,651 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:44:09,151 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error connecting to Angel One: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-05-08 16:44:09,153 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:44:09,603 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:44:09,615 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:44:09,713 - AlgorithmicTradingSystem.AngelOneExecutor - ERROR - Error connecting to Angel One: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-05-08 16:44:09,726 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:44:09,745 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:09,747 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:09,748 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:09,750 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:09,750 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:09,752 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:09,754 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:09,759 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:09,759 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:09,762 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:09,763 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:09,764 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:09,766 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:09,770 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:09,771 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:09,771 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:09,772 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:09,779 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,440 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,449 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:10,454 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,455 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:10,457 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,523 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,529 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,535 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:10,546 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,568 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,546 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,581 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:10,590 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,596 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,813 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,838 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:10,855 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,857 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:10,897 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,918 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,922 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,924 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,930 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:10,938 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,938 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:10,938 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:10,939 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:10,942 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,150 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,212 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,277 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,291 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,296 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,299 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,307 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,301 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,311 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,313 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,318 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,319 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,373 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,375 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,426 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,427 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,428 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,430 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,466 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,509 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,537 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,547 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,553 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,564 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,574 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,582 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,584 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,639 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,747 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,758 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,789 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,789 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,797 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,888 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,896 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,897 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,903 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,904 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,936 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,936 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:11,945 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,955 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,957 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,958 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,958 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,961 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:11,967 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:11,969 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:11,972 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,012 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,015 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,019 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,020 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,048 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,051 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,060 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,064 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,065 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,065 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,067 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,075 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,222 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,294 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,345 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,354 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,369 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,385 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,389 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,430 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,433 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,438 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,439 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,446 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,447 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,449 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,448 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,450 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,451 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,470 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,497 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,500 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,529 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,555 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,575 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,577 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,581 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,581 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,584 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,588 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,609 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,698 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,779 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,788 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,790 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,793 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,797 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,801 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,801 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,802 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,804 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,832 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,833 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,844 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,847 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:12,868 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,880 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:12,885 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:12,904 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:12,912 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,043 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,060 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,062 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,065 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,110 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,126 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,127 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,150 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,207 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,213 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,217 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,231 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,237 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,239 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,243 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,455 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,485 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,491 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,497 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,508 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,515 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,567 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,567 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,572 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,583 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,592 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,605 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,668 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,671 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,710 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,715 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,714 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,750 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,750 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,752 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,762 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,758 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,764 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,804 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,809 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,821 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,852 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,856 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:13,856 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:13,857 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:13,934 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:13,991 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:44:14,029 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,032 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,035 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,036 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,037 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,041 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,042 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,078 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,094 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,100 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,231 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,417 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,426 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,450 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,456 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,471 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,475 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,477 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,482 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,485 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,503 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,503 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,503 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,503 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,504 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,503 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,505 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,508 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,510 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,513 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,516 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,517 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,576 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,584 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,590 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,590 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,594 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,605 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,606 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,606 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,607 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,647 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,650 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,664 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,667 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,678 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,693 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,693 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,694 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:14,695 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:14,695 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:14,700 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,740 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,806 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,880 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,889 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,922 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:14,954 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:44:14,954 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:44:15,039 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:15,052 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:15,080 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,083 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:15,085 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:15,088 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:15,130 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:15,130 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,132 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:44:15,137 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:15,138 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:15,141 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:44:15,141 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,142 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:44:15,143 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:44:15,155 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for BSE:SENSEX
+2026-05-08 16:44:15,155 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,156 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^BSESN
+2026-05-08 16:44:15,157 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for BSE:SENSEX. No mock fallback allowed for indices.
+2026-05-08 16:44:15,158 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: 503: Live data unavailable for BSE:SENSEX. Please check connection.
+2026-05-08 16:44:15,168 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for BSE:SENSEX
+2026-05-08 16:44:15,168 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,169 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^BSESN
+2026-05-08 16:44:15,170 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for BSE:SENSEX. No mock fallback allowed for indices.
+2026-05-08 16:44:15,170 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: 503: Live data unavailable for BSE:SENSEX. Please check connection.
+2026-05-08 16:44:15,174 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for BSE:SENSEX
+2026-05-08 16:44:15,174 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,175 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^BSESN
+2026-05-08 16:44:15,176 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for BSE:SENSEX. No mock fallback allowed for indices.
+2026-05-08 16:44:15,176 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: 503: Live data unavailable for BSE:SENSEX. Please check connection.
+2026-05-08 16:44:15,179 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for BSE:SENSEX
+2026-05-08 16:44:15,179 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:44:15,180 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^BSESN
+2026-05-08 16:44:15,180 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for BSE:SENSEX. No mock fallback allowed for indices.
+2026-05-08 16:44:15,181 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: 503: Live data unavailable for BSE:SENSEX. Please check connection.
+2026-05-08 16:44:15,298 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:15,304 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:44:19,171 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:44:19,189 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:44:42,007 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:44:42,007 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:44:42,607 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:44:42,607 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:44:47,964 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:44:48,721 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:44:48,933 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:44:48,933 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:44:49,723 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:44:49,724 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:44:54,787 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:44:54,805 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:44:55,686 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:44:55,704 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:45:06,064 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:45:06,065 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:45:06,849 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:45:06,849 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:45:12,424 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:45:12,826 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:45:13,391 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:45:13,391 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:45:13,895 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:45:13,896 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:45:18,898 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:45:18,916 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:45:20,136 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:45:20,155 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:45:30,068 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:45:30,739 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:45:30,748 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:45:30,782 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:45:30,804 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:45:30,885 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:45:30,895 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:45:30,963 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:45:30,970 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:45:32,207 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:45:32,328 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:45:32,330 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:45:32,524 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:45:33,036 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:45:33,083 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:45:34,848 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:45:35,765 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:45:35,765 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:45:39,619 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:45:39,641 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:45:45,993 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:45:46,564 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:45:46,565 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:45:46,572 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:45:46,582 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:45:47,073 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:45:47,246 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:45:47,247 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:45:47,845 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:00,992 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:46:01,534 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:46:01,535 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:46:01,551 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:01,560 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:46:02,020 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:46:02,225 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:02,226 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:46:02,810 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:16,007 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:46:16,531 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:46:16,531 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:46:16,599 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:16,644 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:46:17,183 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:46:17,196 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:17,198 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:46:17,801 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:31,001 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:46:31,556 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:31,562 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:46:31,734 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:46:31,734 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:46:32,028 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:46:32,329 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:32,331 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:46:32,933 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:46,006 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:46:46,603 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:46:46,606 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:46:46,621 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:46,684 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:46:47,235 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:46:47,301 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:46:47,303 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:46:47,901 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:01,007 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:47:01,647 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:01,652 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:47:01,660 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:01,660 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:02,148 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:47:02,312 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:02,313 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:47:02,937 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:13,875 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:47:14,547 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:14,548 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:14,556 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:14,557 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:14,727 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:14,728 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:14,874 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:14,953 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:47:15,598 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:15,601 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:47:15,643 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:47:16,284 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:19,484 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:47:20,148 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:20,148 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:20,163 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:20,163 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:20,165 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:20,172 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:47:20,369 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:20,370 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:20,698 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:47:20,845 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:20,846 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:47:21,426 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:21,724 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:47:22,484 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:22,485 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:22,532 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:22,534 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:22,543 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:22,543 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:22,557 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:22,562 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:47:23,086 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:47:23,367 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:23,370 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:47:23,752 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:47:24,284 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:24,557 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:24,558 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:24,607 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:24,612 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:47:24,661 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:24,667 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:24,920 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:24,921 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:47:25,231 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:47:25,539 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:25,541 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:47:26,201 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:47:26,996 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:26,996 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-01 to None
+2026-05-08 16:47:27,114 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday with strict risk limits.
+2026-05-08 16:47:27,115 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-05-08 16:47:27,115 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Applying missing technical indicators
+2026-05-08 16:47:27,132 - AlgorithmicTradingSystem.Main - ERROR - Error backtesting ^NSEI: 'sideways'
+2026-05-08 16:47:34,786 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:34,787 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-01 to None
+2026-05-08 16:47:34,910 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for VWAP_RSI_EMA_Intraday with strict risk limits.
+2026-05-08 16:47:34,910 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Generating signals for historical data
+2026-05-08 16:47:34,911 - AlgorithmicTradingSystem.VwapRsiEmaStrategy - INFO - Applying missing technical indicators
+2026-05-08 16:47:34,928 - AlgorithmicTradingSystem.Main - ERROR - Error backtesting ^NSEI: 'sideways'
+2026-05-08 16:47:40,645 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:47:40,646 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-01 to None
+2026-05-08 16:47:40,767 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for ProbabilisticEngineStrategy with strict risk limits.
+2026-05-08 16:48:20,259 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:48:20,260 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:48:20,780 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error connecting to Angel One: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+2026-05-08 16:48:20,781 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:48:21,682 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:48:21,683 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:48:22,069 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:48:22,070 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:48:30,924 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:48:31,916 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:48:31,917 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:48:33,123 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:48:33,806 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:48:33,825 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:48:34,114 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:48:34,114 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:48:37,142 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:48:37,160 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:48:38,990 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:48:39,006 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:49:57,992 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:49:58,004 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:49:58,006 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:49:58,007 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:49:58,007 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:49:58,009 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:49:58,009 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:49:58,043 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:49:58,044 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:49:58,044 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^NSEI
+2026-05-08 16:49:58,045 - AlgorithmicTradingSystem.Main - INFO - Falling back to MockClient for quote
+2026-05-08 16:49:58,046 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock live quote for ^NSEI
+2026-05-08 16:49:58,053 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:49:58,891 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:49:59,437 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:49:59,437 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:49:59,437 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:49:59,438 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:49:59,439 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:49:59,444 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for NIFTY12MAY2624150CE
+2026-05-08 16:49:59,445 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for NIFTY12MAY2624150CE. No mock fallback allowed for indices.
+2026-05-08 16:49:59,471 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:49:59,472 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Angel One not connected.
+2026-05-08 16:49:59,472 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^NSEI
+2026-05-08 16:49:59,473 - AlgorithmicTradingSystem.Main - INFO - Falling back to MockClient for quote
+2026-05-08 16:49:59,473 - AlgorithmicTradingSystem.MockClient - INFO - Generating mock live quote for ^NSEI
+2026-05-08 16:49:59,474 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:49:59,643 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:50:15,648 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-01 to None
+2026-05-08 16:50:15,797 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for ProbabilisticEngineStrategy with strict risk limits.
+2026-05-08 16:50:23,398 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-01 to None
+2026-05-08 16:50:23,519 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for Nifty50_9_21_EMA_Scalping with strict risk limits.
+2026-05-08 16:50:23,519 - AlgorithmicTradingSystem.Nifty50_Scalping - INFO - Generating Scalping signals for Nifty 50 with Sideways Filter
+2026-05-08 16:50:23,526 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,529 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,531 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,535 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,544 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,547 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,548 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,549 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,559 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,574 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,582 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,593 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,597 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,602 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:23,626 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:33,948 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (15m) from 2026-05-01 to None
+2026-05-08 16:50:34,126 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for Nifty50_9_21_EMA_Scalping with strict risk limits.
+2026-05-08 16:50:34,127 - AlgorithmicTradingSystem.Nifty50_Scalping - INFO - Generating Scalping signals for Nifty 50 with Sideways Filter
+2026-05-08 16:50:34,132 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,133 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,134 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,136 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,143 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,148 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,150 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,158 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,166 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (15m) from 2026-05-01 to None
+2026-05-08 16:50:34,279 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for Nifty50_9_21_EMA_Scalping with strict risk limits.
+2026-05-08 16:50:34,279 - AlgorithmicTradingSystem.Nifty50_Scalping - INFO - Generating Scalping signals for Nifty 50 with Sideways Filter
+2026-05-08 16:50:34,284 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,285 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,287 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,288 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,296 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,302 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,304 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:50:34,312 - AlgorithmicTradingSystem.RiskManager - INFO - Calculated position size: 0 units (Risk: 0.5%, Capital: 10000.0)
+2026-05-08 16:51:49,097 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:51:49,097 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:51:53,045 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:51:53,930 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:51:53,930 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:51:57,692 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:51:57,708 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 16:52:07,023 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:52:07,687 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:07,688 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:52:07,703 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:07,704 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:52:07,711 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:07,712 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:52:07,728 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:52:07,741 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:52:08,183 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:52:08,397 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 16:52:09,048 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:52:09,053 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for ^NSEI
+2026-05-08 16:52:09,199 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:52:09,202 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:52:09,205 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:09,206 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:52:09,208 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:09,210 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:52:09,567 - AlgorithmicTradingSystem.Main - ERROR - Greeks calculation error: AngelOneClient.fetch_option_chain() missing 1 required positional argument: 'spot_price'
+2026-05-08 16:52:09,862 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:52:10,297 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:10,298 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 16:52:10,879 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:52:10,882 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 16:52:11,569 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 16:52:13,260 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:13,261 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-01 to None
+2026-05-08 16:52:13,496 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for ProbabilisticEngineStrategy with strict risk limits.
+2026-05-08 16:52:19,317 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 16:52:19,317 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (60m) from 2026-05-01 to None
+2026-05-08 16:52:19,433 - AlgorithmicTradingSystem.BacktestEngine - INFO - Starting backtest for ProbabilisticEngineStrategy with strict risk limits.
+2026-05-08 16:52:53,378 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 16:52:53,378 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 16:52:57,095 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 16:52:58,010 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 16:52:58,011 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 16:53:01,750 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 16:53:01,767 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.

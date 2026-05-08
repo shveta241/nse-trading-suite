@@ -4,7 +4,7 @@ import {
   TrendingUp, TrendingDown, Activity, DollarSign, 
   BarChart2, Shield, Play, RefreshCw, AlertCircle, Briefcase,
   Lock, LogIn, User, Award, BookOpen, Brain, Zap, LogOut,
-  Monitor, Cpu, Bell, Search, Layers, Settings
+  Monitor, Cpu, Bell, Search, Layers, Settings, History
 } from 'lucide-react';
 import { 
   ResponsiveContainer, LineChart, Line, XAxis, YAxis, 
@@ -77,7 +77,8 @@ function App() {
   // Backtest states
   const [btSymbol, setBtSymbol] = useState('^NSEI');
   const [btInterval, setBtInterval] = useState('5m');
-  const [btStartDate, setBtStartDate] = useState('2026-04-01');
+  const [btStartDate, setBtStartDate] = useState(new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]);
+  const [btStrategy, setBtStrategy] = useState('VWAP_RSI');
   const [btResults, setBtResults] = useState(null);
   const [btLoading, setBtLoading] = useState(false);
 
@@ -342,12 +343,14 @@ function App() {
         symbol: btSymbol,
         interval: btInterval,
         start_date: btStartDate,
-        capital: positionsData.capital || 100000
+        capital: 10000.0,
+        strategy_name: btStrategy
       });
       setBtResults(res.data);
     } catch (e) {
-      alert("Backtest failed. Check parameters.");
-      console.error(e);
+      const errorMsg = e.response?.data?.detail || "Backtest failed. Check internet or symbol.";
+      alert(errorMsg);
+      console.error("Backtest error", e);
     } finally {
       setBtLoading(false);
     }
@@ -1163,39 +1166,47 @@ function App() {
       )}
 
       {activeTab === 'backtest' && (
-        <div className="grid-container">
-          {/* Backtest Inputs */}
-          <div className="card glass side-panel">
+        <div className="grid-container" style={{gridTemplateColumns: '1.2fr 2fr', gap: '24px', alignItems: 'stretch'}}>
+          {/* Left Panel: Inputs */}
+          <div className="card glass" style={{gridColumn: 'span 1', display: 'flex', flexDirection: 'column', height: 'fit-content'}}>
             <h3>Backtest Parameters</h3>
             <form onSubmit={handleRunBacktest}>
               <div className="form-group">
+                <label>Strategy Engine</label>
+                <select className="form-input" value={btStrategy} onChange={(e) => setBtStrategy(e.target.value)}>
+                  <option value="VWAP_RSI">AI Quant (VWAP + RSI)</option>
+                  <option value="PROBABILISTIC">Probabilistic V2 (Expiry Special)</option>
+                  <option value="SCALPING">High-Freq Scalping</option>
+                </select>
+              </div>
+              <div className="form-group">
                 <label>Symbol</label>
-                <input type="text" className="form-input" value={btSymbol} onChange={(e) => setBtSymbol(e.target.value)} placeholder="e.g. RELIANCE.NS or NIFTY50" required />
-                <span style={{fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', marginTop: 4, display: 'block'}}>
-                  Tip: Type <b>NIFTY50</b> or a comma-separated list.
-                </span>
+                <input type="text" className="form-input" value={btSymbol} onChange={(e) => setBtSymbol(e.target.value)} placeholder="e.g. NIFTY50" required />
               </div>
               <div className="form-group">
                 <label>Interval</label>
                 <select className="form-input" value={btInterval} onChange={(e) => setBtInterval(e.target.value)}>
-                  <option value="5m">5 Minute</option>
+                  <option value="5m">5 Minute (Intraday)</option>
                   <option value="15m">15 Minute</option>
-                  <option value="60m">1 Hour</option>
-                  <option value="1d">1 Day</option>
+                  <option value="60m">1 Hour (Swing)</option>
                 </select>
               </div>
               <div className="form-group">
-                <label>Start Date</label>
+                <label>Historical Range (Start)</label>
                 <input type="date" className="form-input" value={btStartDate} onChange={(e) => setBtStartDate(e.target.value)} required />
               </div>
-              <button type="submit" className="btn-primary" style={{width: '100%', marginTop: 8}} disabled={btLoading}>
-                {btLoading ? 'Simulating...' : 'Run Analysis'}
+              <button type="submit" className="btn-primary" style={{width: '100%', marginTop: 12, padding: '14px'}} disabled={btLoading}>
+                {btLoading ? (
+                  <span style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8}}>
+                    <RefreshCw size={16} className="pulse" /> SIMULATING...
+                  </span>
+                ) : 'RUN ENGINE ANALYSIS'}
               </button>
             </form>
           </div>
 
-          {/* Backtest Output */}
-          <div className="card glass chart-card">
+          {/* Right Panel: Performance */}
+          <div className="card glass" style={{gridColumn: 'span 1', minHeight: '600px'}}>
             <h3>Backtest Performance Analytics</h3>
             {!btResults ? (
               <div style={{textAlign: 'center', padding: '80px 0', color: 'var(--text-muted)'}}>
@@ -1204,30 +1215,59 @@ function App() {
               </div>
             ) : (
               <div>
-                <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, marginBottom: 24}}>
-                  <div className="sub-stat-card" style={{padding: 16}}>
-                    <span className="sub-stat-label">Final Equity</span>
-                    <p style={{fontSize: '1.5rem', fontWeight: 600, margin: '4px 0', color: btResults.metrics.total_pnl >= 0 ? 'var(--bullish)' : 'var(--bearish)'}}>
-                      ₹{btResults.metrics.final_equity?.toFixed(2)}
+                <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16, marginBottom: 24}}>
+                  <div className="sub-stat-card" style={{padding: '20px', borderLeft: '4px solid var(--primary)', background: 'rgba(59, 130, 246, 0.05)'}}>
+                    <span className="sub-stat-label">Total Absolute Profit</span>
+                    <p style={{fontSize: '1.75rem', fontWeight: 700, margin: '8px 0', color: btResults.metrics.total_pnl >= 0 ? 'var(--bullish)' : 'var(--bearish)'}}>
+                      ₹{btResults.metrics.total_pnl?.toFixed(2)}
                     </p>
                   </div>
-                  <div className="sub-stat-card" style={{padding: 16}}>
-                    <span className="sub-stat-label">Total Trades</span>
-                    <p style={{fontSize: '1.5rem', fontWeight: 600, margin: '4px 0'}}>{btResults.metrics.total_trades}</p>
-                  </div>
-                  <div className="sub-stat-card" style={{padding: 16}}>
+                  <div className="sub-stat-card" style={{padding: '20px', borderLeft: '4px solid var(--bullish)', background: 'rgba(16, 185, 129, 0.05)'}}>
                     <span className="sub-stat-label">Win Rate</span>
-                    <p style={{fontSize: '1.5rem', fontWeight: 600, margin: '4px 0'}}>{(btResults.metrics.win_rate * 100).toFixed(1)}%</p>
+                    <p style={{fontSize: '1.75rem', fontWeight: 700, margin: '8px 0', color: 'var(--bullish)'}}>{(btResults.metrics.win_rate * 100).toFixed(1)}%</p>
                   </div>
-                  <div className="sub-stat-card" style={{padding: 16}}>
-                    <span className="sub-stat-label">Sharpe Ratio</span>
-                    <p style={{fontSize: '1.5rem', fontWeight: 600, margin: '4px 0'}}>{btResults.metrics.sharpe_ratio?.toFixed(2)}</p>
+                  <div className="sub-stat-card" style={{padding: '20px'}}>
+                    <span className="sub-stat-label">Total Trade Count</span>
+                    <p style={{fontSize: '1.75rem', fontWeight: 700, margin: '8px 0'}}>{btResults.metrics.total_trades}</p>
+                  </div>
+                  <div className="sub-stat-card" style={{padding: '20px'}}>
+                    <span className="sub-stat-label">Risk-Adjusted (Sharpe)</span>
+                    <p style={{fontSize: '1.75rem', fontWeight: 700, margin: '8px 0', color: 'var(--secondary)'}}>{btResults.metrics.sharpe_ratio?.toFixed(2)}</p>
                   </div>
                 </div>
 
-                <h4 style={{margin: '16px 0 8px 0'}}>Transaction History</h4>
-                <div className="table-container" style={{maxHeight: 250}}>
-                  <table>
+                {btResults.equity_curve && btResults.equity_curve.length > 0 && (
+                  <div style={{height: 320, width: '100%', marginBottom: 32, background: 'rgba(255,255,255,0.02)', padding: '24px', borderRadius: 16, border: '1px solid rgba(255,255,255,0.05)'}}>
+                    <h4 style={{margin: '0 0 20px 0', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: 8}}>
+                      <TrendingUp size={18} color="var(--bullish)" /> Growth Trajectory (Equity Curve)
+                    </h4>
+                    <ResponsiveContainer width="100%" height="100%">
+                      <AreaChart data={btResults.equity_curve}>
+                        <defs>
+                          <linearGradient id="colorEquity" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor="var(--bullish)" stopOpacity={0.3}/>
+                            <stop offset="95%" stopColor="var(--bullish)" stopOpacity={0}/>
+                          </linearGradient>
+                        </defs>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" vertical={false} />
+                        <XAxis dataKey="timestamp" hide />
+                        <YAxis hide domain={['auto', 'auto']} />
+                        <Tooltip 
+                          contentStyle={{background: '#0f172a', borderColor: '#334155', borderRadius: '8px', boxShadow: '0 10px 25px rgba(0,0,0,0.5)'}}
+                          itemStyle={{color: 'var(--bullish)', fontWeight: 600}}
+                          formatter={(val) => [`₹${val.toFixed(2)}`, 'Capital']}
+                        />
+                        <Area type="monotone" dataKey="equity" stroke="var(--bullish)" fillOpacity={1} fill="url(#colorEquity)" strokeWidth={3} />
+                      </AreaChart>
+                    </ResponsiveContainer>
+                  </div>
+                )}
+
+                <h4 style={{margin: '16px 0 12px 0', display: 'flex', alignItems: 'center', gap: 8}}>
+                  <History size={18} /> Detailed Transaction Ledger
+                </h4>
+                <div className="table-container" style={{maxHeight: 350, border: '1px solid rgba(255,255,255,0.05)', borderRadius: 12}}>
+                  <table style={{borderCollapse: 'separate', borderSpacing: '0 4px'}}>
                     <thead>
                       <tr>
                         <th>Symbol</th>

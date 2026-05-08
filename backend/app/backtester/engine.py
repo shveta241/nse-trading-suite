@@ -161,6 +161,7 @@ class BacktestEngine:
             "win_rate": win_rate,
             "total_pnl": total_pnl,
             "sharpe_ratio": float(sharpe),
+            "equity_curve": equity_curve[-200:], # Last 200 points for UI
             "trades": trades
         }
 

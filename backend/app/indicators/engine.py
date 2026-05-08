@@ -152,6 +152,7 @@ class IndicatorEngine:
         
         df['rsi_14'] = cls.calculate_rsi(df, 14)
         df['vwap'] = cls.calculate_vwap(df)
+        df['sideways'] = cls.calculate_sideways(df)
         df['atr_14'] = cls.calculate_atr(df, 14)
         df['adx_14'] = cls.calculate_adx(df, 14)
         
