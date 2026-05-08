@@ -26,9 +26,9 @@ function App() {
   // App states
   const [activeTab, setActiveTab] = useState('analysis');
   const [liveSignals, setLiveSignals] = useState([]);
-  const [positionsData, setPositionsData] = useState({ capital: 100000, positions: {}, order_history: [] });
+  const [positionsData, setPositionsData] = useState({ capital: 100000, positions: [], order_history: [] });
   const [indicatorsData, setIndicatorsData] = useState([]);
-  const [selectedSymbol, setSelectedSymbol] = useState('RELIANCE.NS');
+  const [selectedSymbol, setSelectedSymbol] = useState('^NSEI');
   
   // Advanced Analysis states
   const [analysisData, setAnalysisData] = useState(null);
@@ -37,17 +37,26 @@ function App() {
   const [globalSentiment, setGlobalSentiment] = useState(null);
 
   // Backtest states
-  const [btSymbol, setBtSymbol] = useState('RELIANCE.NS');
+  const [btSymbol, setBtSymbol] = useState('^NSEI');
   const [btInterval, setBtInterval] = useState('5m');
   const [btStartDate, setBtStartDate] = useState('2026-04-01');
   const [btResults, setBtResults] = useState(null);
   const [btLoading, setBtLoading] = useState(false);
 
   // --- NEW INTERACTIVE STATES ---
-  const [orderSymbol, setOrderSymbol] = useState('RELIANCE.NS');
-  const [orderQty, setOrderQty] = useState(10);
+  const [orderSymbol, setOrderSymbol] = useState('^NSEI');
+  const [orderQty, setOrderQty] = useState(65);
   const [orderSide, setOrderSide] = useState('BUY');
   const [orderType, setOrderType] = useState('MARKET');
+
+  // Update quantity based on lot size
+  useEffect(() => {
+    if (orderSymbol === '^NSEI') {
+      setOrderQty(65);
+    } else if (orderSymbol === 'BSE:SENSEX') {
+      setOrderQty(20);
+    }
+  }, [orderSymbol]);
   const [orderPrice, setOrderPrice] = useState('');
   const [orderLoading, setOrderLoading] = useState(false);
   const [watchlistFilter, setWatchlistFilter] = useState('');
@@ -158,7 +167,30 @@ function App() {
   };
 
   const handlePlaceOrder = async (e) => {
-    if (e) e.preventDefault();
+    e.preventDefault();
+    
+    // 1. Quantity Guardrail: Max 2 lots for manual trades
+    const maxLots = 2;
+    const lotSize = orderSymbol === '^NSEI' ? 65 : 20;
+    const maxQty = maxLots * lotSize;
+    
+    if (orderQty > maxQty) {
+      alert(`Manual Trade Restricted: Max allowed is ${maxLots} lots (${maxQty} qty) to prevent high risk.`);
+      return;
+    }
+
+    // 2. AI Conflict Warning
+    const currentSignalObj = liveSignals.find(s => s.symbol === orderSymbol);
+    if (currentSignalObj) {
+      const aiSignal = currentSignalObj.signal; // BUY, SELL, or NEUTRAL
+      if ((orderSide === 'BUY' && aiSignal === 'SELL') || (orderSide === 'SELL' && aiSignal === 'BUY')) {
+        const proceed = window.confirm(
+          `⚠️ AI SIGNAL CONFLICT!\n\nYour trade is ${orderSide} but the AI Engine is ${aiSignal}.\nTaking trades against the AI score is highly risky.\n\nDo you still want to proceed?`
+        );
+        if (!proceed) return;
+      }
+    }
+
     setOrderLoading(true);
     try {
       await axios.post(`${API_BASE_URL}/api/orders`, {
@@ -189,6 +221,26 @@ function App() {
       alert(`Instant Market ${side} executed for ${selectedSymbol}`);
     } catch (e) {
       alert(`Execution Error: ${e.response?.data?.detail || e.message}`);
+    }
+  };
+  const handleResetPositions = async () => {
+    if (!window.confirm("Are you sure you want to clear all positions and order history? This will start with a fresh state.")) return;
+    try {
+      await axios.post(`${API_BASE_URL}/api/positions/reset`);
+      fetchPositions();
+      alert("Trading state reset successfully.");
+    } catch (e) {
+      alert(`Reset Error: ${e.response?.data?.detail || e.message}`);
+    }
+  };
+  const handleExitPosition = async (symbol) => {
+    if (!window.confirm(`Are you sure you want to EXIT position for ${symbol} at MARKET price?`)) return;
+    try {
+      await axios.post(`${API_BASE_URL}/api/positions/exit?symbol=${encodeURIComponent(symbol)}`);
+      fetchPositions();
+      alert(`Successfully exited ${symbol} position.`);
+    } catch (e) {
+      alert(`Exit Error: ${e.response?.data?.detail || e.message}`);
     }
   };
 
@@ -382,9 +434,11 @@ function App() {
               <Briefcase size={20} className="text-primary" />
             </div>
             <h2 className="widget-value">
-              {Object.keys(positionsData.positions || {}).filter(k => positionsData.positions[k] !== 0).length}
+              {positionsData.positions?.length || 0}
             </h2>
-            <p className="widget-subtext">Active market exposure</p>
+            <p className="widget-subtext" style={{ color: (positionsData.total_pnl || 0) >= 0 ? 'var(--bullish)' : 'var(--bearish)' }}>
+              Live PNL: ₹{(positionsData.total_pnl || 0).toLocaleString(undefined, {maximumFractionDigits: 2})}
+            </p>
           </div>
 
           <div className="card glass summary-widget hover-scale">
@@ -396,6 +450,83 @@ function App() {
             <p className="widget-subtext">Trailing StopLoss deployed</p>
           </div>
 
+          {/* Live Positions Tracker */}
+          <div className="card glass" style={{gridColumn: 'span 12'}}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12}}>
+              <h3 style={{margin: 0, display: 'flex', alignItems: 'center', gap: 8}}>
+                <Briefcase size={20} className="text-primary" /> Live Positions
+              </h3>
+              <div style={{display: 'flex', gap: 12, alignItems: 'center'}}>
+                <div style={{fontSize: '0.85rem', color: 'var(--text-muted)'}}>
+                  Auto-refreshing every 15s
+                </div>
+                <button 
+                  onClick={handleResetPositions} 
+                  className="tab-btn" 
+                  style={{padding: '4px 8px', fontSize: '0.7rem', border: '1px solid rgba(239, 68, 68, 0.3)', color: 'var(--bearish)'}}
+                  title="Clear buggy legacy data"
+                >
+                  <RefreshCw size={12} style={{marginRight: 4}} /> Reset State
+                </button>
+              </div>
+            </div>
+            <div className="table-container">
+              {(!positionsData.positions || positionsData.positions.length === 0) ? (
+                <p style={{color: 'var(--text-muted)', textAlign: 'center', padding: '24px 0'}}>No active positions.</p>
+              ) : (
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Symbol</th>
+                      <th>Type</th>
+                      <th>Strike</th>
+                      <th>Qty</th>
+                      <th>Avg. Price</th>
+                      <th>LTP</th>
+                      <th>PNL (₹)</th>
+                      <th>PNL (%)</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {positionsData.positions.map((pos, idx) => {
+                      const isProfit = pos.pnl >= 0;
+                      return (
+                        <tr key={idx}>
+                          <td style={{fontWeight: 600}}>{pos.display_name || pos.symbol}</td>
+                          <td>
+                            <span className={`status-badge ${pos.type === 'CE' ? 'bg-bullish-glow text-bullish' : pos.type === 'PE' ? 'bg-bearish-glow text-bearish' : 'bg-primary-glow text-primary'}`} style={{padding: '2px 8px', borderRadius: 4, fontSize: '0.75rem', fontWeight: 700}}>
+                              {pos.type}
+                            </span>
+                          </td>
+                          <td style={{fontWeight: 600, color: 'var(--secondary)'}}>{pos.strike || '-'}</td>
+                          <td>{pos.quantity}</td>
+                          <td>₹{pos.avg_price?.toFixed(2)}</td>
+                          <td>₹{pos.ltp?.toFixed(2)}</td>
+                          <td className={isProfit ? 'text-bullish' : 'text-bearish'} style={{fontWeight: 700}}>
+                            {isProfit ? '+' : ''}{pos.pnl?.toFixed(2)}
+                          </td>
+                          <td className={isProfit ? 'text-bullish' : 'text-bearish'}>
+                            {isProfit ? '+' : ''}{pos.pnl_pct?.toFixed(2)}%
+                          </td>
+                          <td>
+                            <button 
+                              onClick={() => handleExitPosition(pos.symbol)} 
+                              className="btn-primary" 
+                              style={{padding: '4px 12px', fontSize: '0.75rem', background: 'var(--bearish)', boxShadow: '0 0 10px rgba(239, 68, 68, 0.3)'}}
+                            >
+                              EXIT
+                            </button>
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              )}
+            </div>
+          </div>
+
           {/* Interactive Execution Terminal */}
           <div className="card glass" style={{gridColumn: 'span 4'}}>
             <h3 style={{margin: '0 0 16px 0'}}>Execution Terminal</h3>
@@ -403,10 +534,6 @@ function App() {
               <div className="form-group">
                 <label>Symbol</label>
                 <select className="form-input" value={orderSymbol} onChange={(e) => setOrderSymbol(e.target.value)}>
-                  <option value="RELIANCE.NS">RELIANCE</option>
-                  <option value="TCS.NS">TCS</option>
-                  <option value="HDFCBANK.NS">HDFCBANK</option>
-                  <option value="INFY.NS">INFY</option>
                   <option value="^NSEI">NIFTY 50</option>
                   <option value="BSE:SENSEX">SENSEX</option>
                 </select>
@@ -422,7 +549,15 @@ function App() {
                 </div>
                 <div className="form-group">
                   <label>Quantity</label>
-                  <input type="number" className="form-input" value={orderQty} onChange={(e) => setOrderQty(e.target.value)} min={1} required />
+                  <input 
+                    type="number" 
+                    className="form-input" 
+                    value={orderQty} 
+                    step={orderSymbol === '^NSEI' ? 65 : 20}
+                    onChange={(e) => setOrderQty(parseInt(e.target.value))} 
+                    min={1} 
+                    required 
+                  />
                 </div>
               </div>
 
@@ -442,8 +577,17 @@ function App() {
                 )}
               </div>
 
-              <button type="submit" className="btn-primary" style={{width: '100%', marginTop: 8}} disabled={orderLoading}>
-                {orderLoading ? 'Placing Order...' : `${orderSide} Order`}
+              <button 
+                type="submit" 
+                className={`btn btn-primary ${orderLoading ? 'loading' : ''}`}
+                style={{
+                  marginTop: 16, 
+                  width: '100%', 
+                  backgroundColor: (liveSignals.find(s => s.symbol === orderSymbol)?.signal === orderSide) ? 'var(--bullish)' : 'var(--primary)'
+                }}
+                disabled={orderLoading}
+              >
+                {orderLoading ? 'Executing...' : (liveSignals.find(s => s.symbol === orderSymbol)?.signal === orderSide) ? `Place ${orderSide} Order (AI CONFIRMED)` : `Place ${orderSide} Order`}
               </button>
             </form>
           </div>
@@ -557,6 +701,8 @@ function App() {
                     <tr>
                       <th>Order ID</th>
                       <th>Symbol</th>
+                      <th>Type</th>
+                      <th>Strike</th>
                       <th>Side</th>
                       <th>Qty</th>
                       <th>Fill Price</th>
@@ -568,6 +714,12 @@ function App() {
                       <tr key={idx}>
                         <td><code>{order.order_id}</code></td>
                         <td>{order.symbol}</td>
+                        <td>
+                          <span className={`status-badge ${order.type === 'CE' ? 'bg-bullish-glow text-bullish' : order.type === 'PE' ? 'bg-bearish-glow text-bearish' : 'bg-primary-glow text-primary'}`} style={{padding: '2px 8px', borderRadius: 4, fontSize: '0.75rem', fontWeight: 700}}>
+                            {order.type}
+                          </span>
+                        </td>
+                        <td style={{fontWeight: 600, color: 'var(--secondary)'}}>{order.strike || '-'}</td>
                         <td className={order.side === 'BUY' ? 'text-bullish' : 'text-bearish'}>{order.side}</td>
                         <td>{order.quantity}</td>
                         <td>₹{order.fill_price?.toFixed(2)}</td>
@@ -595,10 +747,6 @@ function App() {
                 value={selectedSymbol}
                 onChange={(e) => setSelectedSymbol(e.target.value)}
               >
-                <option value="RELIANCE.NS">RELIANCE</option>
-                <option value="TCS.NS">TCS</option>
-                <option value="HDFCBANK.NS">HDFCBANK</option>
-                <option value="INFY.NS">INFY</option>
                 <option value="^NSEI">NIFTY 50</option>
                 <option value="BSE:SENSEX">SENSEX</option>
               </select>

@@ -95,10 +95,51 @@ class IndicatorEngine:
         histogram = macd - signal
         return pd.DataFrame({'macd': macd, 'macd_signal': signal, 'macd_hist': histogram}, index=df.index)
 
+    @staticmethod
+    def calculate_atr(df: pd.DataFrame, period: int = 14) -> pd.Series:
+        """
+        Calculates Average True Range (ATR).
+        Used for volatility-based Stop Loss.
+        """
+        high_low = df['high'] - df['low']
+        high_cp = np.abs(df['high'] - df['close'].shift())
+        low_cp = np.abs(df['low'] - df['close'].shift())
+        tr = pd.concat([high_low, high_cp, low_cp], axis=1).max(axis=1)
+        return tr.rolling(window=period).mean()
+
+    @staticmethod
+    def calculate_bb(df: pd.DataFrame, period: int = 20, std_dev: int = 2) -> pd.DataFrame:
+        """
+        Calculates Bollinger Bands.
+        """
+        sma = df['close'].rolling(window=period).mean()
+        std = df['close'].rolling(window=period).std()
+        upper = sma + (std * std_dev)
+        lower = sma - (std * std_dev)
+        return pd.DataFrame({'bb_upper': upper, 'bb_lower': lower, 'bb_mid': sma}, index=df.index)
+
+    @staticmethod
+    def calculate_adx(df: pd.DataFrame, period: int = 14) -> pd.Series:
+        """
+        Calculates Average Directional Index (ADX) to measure trend strength.
+        """
+        plus_dm = df['high'].diff()
+        minus_dm = df['low'].diff()
+        plus_dm[plus_dm < 0] = 0
+        minus_dm[minus_dm > 0] = 0
+        minus_dm = np.abs(minus_dm)
+        
+        tr = IndicatorEngine.calculate_atr(df, 1) # True Range
+        plus_di = 100 * (plus_dm.rolling(period).sum() / tr.rolling(period).sum())
+        minus_di = 100 * (minus_dm.rolling(period).sum() / tr.rolling(period).sum())
+        dx = 100 * np.abs(plus_di - minus_di) / (plus_di + minus_di)
+        adx = dx.rolling(period).mean()
+        return adx
+
     @classmethod
     def apply_indicators(cls, df: pd.DataFrame) -> pd.DataFrame:
         """
-        Applies standard indicators requested (RSI 14, EMA 9, EMA 20, EMA 50, VWAP, Sideways, MACD) to the dataframe.
+        Applies a professional suite of indicators for robust analysis.
         """
         if df.empty:
             return df
@@ -107,9 +148,16 @@ class IndicatorEngine:
         df['ema_9'] = cls.calculate_ema(df, 9)
         df['ema_20'] = cls.calculate_ema(df, 20)
         df['ema_50'] = cls.calculate_ema(df, 50)
+        df['ema_200'] = cls.calculate_ema(df, 200) # Long term trend
+        
         df['rsi_14'] = cls.calculate_rsi(df, 14)
         df['vwap'] = cls.calculate_vwap(df)
-        df['sideways'] = cls.calculate_sideways(df)
+        df['atr_14'] = cls.calculate_atr(df, 14)
+        df['adx_14'] = cls.calculate_adx(df, 14)
+        
+        bb_df = cls.calculate_bb(df)
+        df['bb_upper'] = bb_df['bb_upper']
+        df['bb_lower'] = bb_df['bb_lower']
         
         macd_df = cls.calculate_macd(df)
         df['macd'] = macd_df['macd']

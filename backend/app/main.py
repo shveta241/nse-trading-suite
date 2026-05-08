@@ -71,7 +71,10 @@ async def auto_trade_loop():
         if auto_trade_state["enabled"]:
             try:
                 today = datetime.now().weekday()
-                
+                # Strict Data Source Management for Auto-Trade
+                now = datetime.now()
+                is_market_open = now.weekday() < 5 and (now.hour > 9 or (now.hour == 9 and now.minute >= 15)) and (now.hour < 15 or (now.hour == 15 and now.minute <= 30))
+
                 for symbol in watchlist:
                     # Expiry logic strictly bound to respective days: Nifty (Tue=1), Sensex (Thu=3)
                     current_expiry_mode = False
@@ -83,26 +86,31 @@ async def auto_trade_loop():
                     strategy = ProbabilisticEngineStrategy(expiry_mode=current_expiry_mode)
                     
                     start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
-                    
                     yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
-                    # Try Angel One first
+                    
+                    # Primary: Angel One
                     df = angel_client.fetch_historical_data(symbol, '5m', start_date)
                     if df.empty:
                         df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
                         
-                    if df.empty:
+                    # Tertiary: Mock Data (RESTRICTED during market hours)
+                    if df.empty and not is_market_open:
+                        logger.info(f"Using Mock Data for Auto-Trade: {symbol} (Market Closed)")
                         df = mock_client.fetch_historical_data(symbol, '5m', start_date)
                         
                     if not df.empty:
                         df_ind = IndicatorEngine.apply_indicators(df)
                         latest = df_ind.iloc[-1].to_dict()
                         
-                        sig = strategy.check_live_signal(latest)
+                        # Fetch real option chain for PCR and ATM strike
+                        opt_data = angel_client.fetch_option_chain(symbol, float(latest['close']))
+                        
+                        sig = strategy.check_live_signal(latest, option_data=opt_data)
                         
                         if sig != 0:
                             side = "BUY" if sig == 1 else "SELL"
                             price = latest.get('close', 100)
-                            lot_size = 15 if "SENSEX" in symbol else 50
+                            lot_size = 20 if "SENSEX" in symbol else 65
                             
                             viability = low_capital_manager.check_trade_viability(price, lot_size)
                             
@@ -121,15 +129,24 @@ async def auto_trade_loop():
                                     )
                                     
                                     if real_res.get("status") == "success":
+                                        # Use actual trading symbol and fetch its price for tracking
+                                        actual_sym = real_res.get("trading_symbol", symbol)
+                                        actual_price = price
+                                        if actual_sym != symbol:
+                                            try:
+                                                q = angel_client.fetch_live_quote(actual_sym)
+                                                actual_price = q.get('last_price', price)
+                                            except: pass
+                                            
                                         # Record in UI state manager
                                         mock_executor.place_order(
-                                            symbol=symbol,
+                                            symbol=actual_sym,
                                             quantity=qty,
                                             side=side,
                                             order_type="MARKET",
-                                            price=price
+                                            price=actual_price
                                         )
-                                        logger.info(f"[REAL AUTO-TRADE EXECUTED] {side} {symbol} @ {price} | OrderID: {real_res.get('order_id')}")
+                                        logger.info(f"[REAL AUTO-TRADE EXECUTED] {side} {actual_sym} @ {actual_price} | OrderID: {real_res.get('order_id')}")
                                     else:
                                         logger.error(f"[AUTO-TRADE REJECTED] {symbol}: {real_res.get('message')}")
             except Exception as e:
@@ -185,7 +202,11 @@ def get_quote(symbol: str = Query(..., description="NSE Stock Symbol (e.g., RELI
         quote = yfinance_client.fetch_live_quote(yf_symbol)
         
     if not quote or quote.get('last_price') == 0:
-        # Fallback to Mock
+        # Fallback to Mock only if NOT Nifty/Sensex
+        if "NIFTY" in symbol.upper() or "SENSEX" in symbol.upper():
+             logger.error(f"Live data failed for {symbol}. No mock fallback allowed for indices.")
+             raise HTTPException(status_code=503, detail=f"Live data unavailable for {symbol}. Please check connection.")
+        
         logger.info("Falling back to MockClient for quote")
         quote = mock_client.fetch_live_quote(symbol)
     
@@ -199,7 +220,7 @@ def get_quote(symbol: str = Query(..., description="NSE Stock Symbol (e.g., RELI
 def run_backtest(request: BacktestRequest):
     # Determine the symbols list
     if request.symbol.upper() in ['NIFTY50', 'ALL', 'WATCHLIST']:
-        symbols = ['RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS']
+        symbols = ['^NSEI', 'BSE:SENSEX']
     else:
         symbols = [s.strip() for s in request.symbol.split(',')]
 
@@ -311,6 +332,9 @@ def get_indicators(symbol: str, interval: str = '5m'):
         df = yfinance_client.fetch_historical_data(yf_symbol, interval, start_date)
         
     if df.empty:
+        if "NIFTY" in symbol.upper() or "SENSEX" in symbol.upper():
+             logger.error(f"Historical live data failed for {symbol}. No mock fallback allowed for indices.")
+             raise HTTPException(status_code=503, detail=f"Market data unavailable for {symbol}.")
         df = mock_client.fetch_historical_data(symbol, interval, start_date)
 
     if df.empty:
@@ -336,7 +360,7 @@ def get_live_signals(expiry_target: Optional[str] = None):
     """
     Checks real-time signals for predefined watchlist using AI Probabilistic Scoring.
     """
-    watchlist = ['^NSEI', 'RELIANCE.NS', 'TCS.NS', 'HDFCBANK.NS', 'INFY.NS', 'BSE:SENSEX']
+    watchlist = ['^NSEI', 'BSE:SENSEX']
     signals = []
     
     for symbol in watchlist:
@@ -350,40 +374,64 @@ def get_live_signals(expiry_target: Optional[str] = None):
         start_date = (datetime.now() - timedelta(days=5)).strftime("%Y-%m-%d")
         
         yf_symbol = '^BSESN' if 'SENSEX' in symbol else symbol
+        
+        # Strict Data Source Management
+        now = datetime.now()
+        is_market_open = now.weekday() < 5 and (now.hour > 9 or (now.hour == 9 and now.minute >= 15)) and (now.hour < 15 or (now.hour == 15 and now.minute <= 30))
+
+        # Primary: Angel One (Real Broker)
         df = angel_client.fetch_historical_data(symbol, '5m', start_date)
+        
+        # Secondary: Yahoo Finance (Real but potentially delayed)
         if df.empty:
             df = yfinance_client.fetch_historical_data(yf_symbol, '5m', start_date)
-            
-        if df.empty:
+        
+        # Tertiary: Mock Data (ONLY allowed outside market hours for demo/testing)
+        if df.empty and not is_market_open:
+            logger.info(f"Using Mock Data for {symbol} (Market is Closed/Weekend)")
             df = mock_client.fetch_historical_data(symbol, '5m', start_date)
+        if df.empty:
+            logger.warning(f"No real data available for {symbol} right now.")
+            continue
             
-        if not df.empty:
-            df_ind = IndicatorEngine.apply_indicators(df)
-            latest = df_ind.iloc[-1].to_dict()
-            latest['symbol'] = symbol
-            
-            sig = strategy.check_live_signal(latest)
-            
-            signals.append({
-                "symbol": symbol,
-                "price": float(latest['close']) if pd.notnull(latest['close']) else None,
-                "vwap": float(latest['vwap']) if pd.notnull(latest['vwap']) else None,
-                "rsi_14": float(latest['rsi_14']) if pd.notnull(latest['rsi_14']) else None,
-                "ema_20": float(latest['ema_20']) if pd.notnull(latest['ema_20']) else None,
-                "ema_50": float(latest['ema_50']) if pd.notnull(latest['ema_50']) else None,
-                "signal": "BUY" if sig == 1 else "SELL" if sig == -1 else "NEUTRAL",
-                "timestamp": datetime.now()
-            })
+        df_ind = IndicatorEngine.apply_indicators(df)
+        latest = df_ind.iloc[-1].to_dict()
+        latest['symbol'] = symbol
+        
+        # Fetch real option chain data for this symbol to provide real signal
+        opt_data = angel_client.fetch_option_chain(symbol, float(latest['close']))
+        
+        sig = strategy.check_live_signal(latest, option_data=opt_data)
+        
+        signals.append({
+            "symbol": symbol,
+            "price": float(latest['close']) if pd.notnull(latest['close']) else None,
+            "vwap": float(latest['vwap']) if pd.notnull(latest['vwap']) else None,
+            "rsi_14": float(latest['rsi_14']) if pd.notnull(latest['rsi_14']) else None,
+            "ema_20": float(latest['ema_20']) if pd.notnull(latest['ema_20']) else None,
+            "ema_50": float(latest['ema_50']) if pd.notnull(latest['ema_50']) else None,
+            "signal": "BUY" if sig == 1 else "SELL" if sig == -1 else "NEUTRAL",
+            "timestamp": datetime.now()
+        })
             
     return signals
 
 @app.get("/api/option_chain")
-def get_option_chain_analysis(symbol: str = "NIFTY", spot_price: float = 22000.0):
+def get_option_chain_analysis(symbol: str = "NIFTY", spot_price: float = 24000.0):
     """
-    Returns Support, Resistance, ATM strike, and PCR metrics.
+    Returns Support, Resistance, ATM strike, and PCR metrics using REAL Angel One data.
     """
-    # Uses fallback simulation for rapid computation
-    analysis = OptionChainAnalyzer.analyze_chain([], spot_price)
+    # 1. Fetch real index price if spot_price is default or old
+    if spot_price == 22000.0 or spot_price == 24000.0:
+        quote = angel_client.fetch_live_quote(symbol)
+        if quote and quote.get('last_price'):
+            spot_price = quote['last_price']
+            
+    # 2. Fetch real option chain structure
+    option_data = angel_client.fetch_option_chain(symbol, spot_price)
+    
+    # 3. Analyze
+    analysis = OptionChainAnalyzer.analyze_chain(option_data, spot_price)
     return analysis
 
 @app.get("/api/global_sentiment")
@@ -518,23 +566,70 @@ def place_order(request: OrderRequest):
             symbol=request.symbol,
             quantity=request.quantity,
             side=request.side,
+            order_type=request.order_type,
             price=request.price
         )
         
         if real_res.get("status") != "success":
             raise HTTPException(status_code=400, detail=real_res.get("message", "Order execution failed"))
 
-        # Keep mock executor updated for the UI dashboard (Shadow State)
+        # Use the actual symbol from the broker (important for Options)
+        actual_symbol = real_res.get("trading_symbol", request.symbol)
+        
+        # Fetch the actual fill price for the option/stock if it was an index order
+        actual_price = request.price
+        if actual_symbol != request.symbol:
+            try:
+                quote = get_quote(actual_symbol)
+                actual_price = quote.get('last_price', request.price)
+                logger.info(f"Actual fill price for {actual_symbol}: {actual_price} (Index was {request.price})")
+            except Exception:
+                pass
+                
         order = mock_executor.place_order(
-            symbol=request.symbol,
+            symbol=actual_symbol,
             quantity=request.quantity,
             side=request.side,
             order_type=request.order_type,
-            price=request.price
+            price=actual_price
         )
         return {"status": "success", "order": order, "broker_order_id": real_res.get("order_id")}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
+@app.post("/api/positions/reset")
+def reset_positions():
+    mock_executor.positions = {}
+    mock_executor.order_history = []
+    mock_executor.capital = 100000.0 # Reset to default
+    mock_executor._save_state()
+    return {"status": "success", "message": "All positions and history cleared."}
+
+@app.post("/api/positions/exit")
+def exit_position(symbol: str = Query(...)):
+    # Find the position
+    pos_data = mock_executor.positions.get(symbol)
+    if not pos_data or pos_data.get('qty', 0) == 0:
+        raise HTTPException(status_code=400, detail="No active position for this symbol.")
+        
+    qty = abs(pos_data['qty'])
+    side = "SELL" if pos_data['qty'] > 0 else "BUY"
+    
+    # Place opposite market order
+    try:
+        # Use existing place_order logic for real execution and mock sync
+        from fastapi import Request
+        from pydantic import BaseModel
+        class InternalOrder(BaseModel):
+            symbol: str
+            quantity: int
+            side: str
+            order_type: str
+            
+        dummy_req = InternalOrder(symbol=symbol, quantity=qty, side=side, order_type="MARKET")
+        return place_order(dummy_req)
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Exit failed: {str(e)}")
 
 @app.delete("/api/orders/{order_id}")
 def cancel_order(order_id: str):
@@ -546,10 +641,89 @@ def cancel_order(order_id: str):
 
 @app.get("/api/positions")
 def get_positions():
+    detailed_positions = []
+    total_pnl = 0.0
+    
+    for symbol, pos_data in mock_executor.positions.items():
+        qty = pos_data.get("qty", 0)
+        avg_price = pos_data.get("avg_price", 0.0)
+        
+        if qty == 0:
+            continue
+            
+        # Fetch LTP
+        ltp = 0.0
+        try:
+            quote = get_quote(symbol)
+            ltp = quote.get('last_price', 0.0)
+        except Exception:
+            # Fallback to last filled price or 0
+            ltp = avg_price
+            
+        pnl = (ltp - avg_price) * qty
+        
+        # Determine Type and Strike
+        pos_type = "EQ"
+        strike = ""
+        if "CE" in symbol.upper() or "PE" in symbol.upper():
+            pos_type = "CE" if "CE" in symbol.upper() else "PE"
+            import re
+            # Extract last numeric part before CE/PE (usually 5 digits for indices)
+            match = re.search(r'(\d+)(?:CE|PE)', symbol.upper())
+            if match:
+                full_num = match.group(1)
+                # Strike is usually the last 5 digits (e.g., 24200) in index options
+                strike = full_num[-5:] if len(full_num) > 5 else full_num
+        
+        # PNL Correction: If avg_price is > 10000 and LTP < 1000 for an OPTION,
+        # it means the index price was recorded as avg_price in a previous bugged version.
+        display_pnl = pnl
+        display_pnl_pct = ((ltp - avg_price) / avg_price * 100) if avg_price != 0 else 0
+        
+        if pos_type != "EQ" and avg_price > 10000 and ltp < 1000:
+            display_pnl = 0.0
+            display_pnl_pct = 0.0
+            
+        # Accumulate corrected PNL
+        total_pnl += display_pnl
+        
+        detailed_positions.append({
+            "symbol": symbol,
+            "display_name": symbol.replace(".NS", ""),
+            "type": pos_type,
+            "strike": strike,
+            "quantity": qty,
+            "avg_price": avg_price,
+            "ltp": ltp,
+            "pnl": display_pnl,
+            "pnl_pct": display_pnl_pct
+        })
+
+    # Enrich Order History with types and strikes
+    enriched_history = []
+    for order in mock_executor.order_history[-15:]:
+        o_copy = order.copy()
+        o_symbol = str(order.get('symbol', '')).upper()
+        o_type = "EQ"
+        o_strike = ""
+        if "CE" in o_symbol or "PE" in o_symbol:
+            o_type = "CE" if "CE" in o_symbol else "PE"
+            import re
+            match = re.search(r'(\d+)(?:CE|PE)', o_symbol)
+            if match:
+                full_num = match.group(1)
+                o_strike = full_num[-5:] if len(full_num) > 5 else full_num
+        
+        o_copy["type"] = o_type
+        o_copy["strike"] = o_strike
+        enriched_history.append(o_copy)
+
     return {
         "capital": mock_executor.capital,
-        "positions": mock_executor.positions,
-        "order_history": mock_executor.order_history[-10:] # Last 10
+        "total_pnl": total_pnl,
+        "positions": detailed_positions,
+        "raw_positions": mock_executor.positions, # for internal use
+        "order_history": enriched_history
     }
 
 

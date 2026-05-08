@@ -1,0 +1,1 @@
+{"capital": 88106.8, "positions": {"NIFTY12MAY2624150CE": {"qty": 66, "avg_price": 180.2}}, "order_history": [{"order_id": "a43eed21", "symbol": "NIFTY12MAY2624150CE", "quantity": 66, "side": "BUY", "order_type": "MARKET", "price": 180.2, "fill_price": 180.2, "status": "FILLED", "timestamp": "2026-05-08T15:24:20.700722"}]}
