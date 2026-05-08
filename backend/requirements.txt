@@ -10,4 +10,5 @@ pytest>=8.3.0
 smartapi-python
 pyotp
 logzero
-websocket-clientscipy
+websocket-client
+scipy
