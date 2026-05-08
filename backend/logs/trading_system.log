@@ -15177,3 +15177,184 @@
 2026-05-08 15:26:55,423 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
 2026-05-08 15:26:55,428 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
 2026-05-08 15:26:56,052 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:00,643 - AlgorithmicTradingSystem.AngelOneClient - INFO - Successfully connected to Angel One SmartAPI
+2026-05-08 15:27:00,644 - AlgorithmicTradingSystem.AngelOneClient - INFO - Downloading Angel One scrip master for option chain...
+2026-05-08 15:27:04,378 - AlgorithmicTradingSystem.MockExecutor - INFO - Mock state loaded from mock_state.json
+2026-05-08 15:27:05,266 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Successfully connected to Angel One.
+2026-05-08 15:27:05,266 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Downloading Angel One scrip master...
+2026-05-08 15:27:08,999 - AlgorithmicTradingSystem.AngelOneExecutor - INFO - Scrip master updated successfully.
+2026-05-08 15:27:09,051 - AlgorithmicTradingSystem.Main - INFO - Auto-Trade background loop initialized.
+2026-05-08 15:27:09,062 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:27:09,623 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:27:09,624 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:27:09,633 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:09,633 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:27:10,149 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:10,795 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:10,797 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:27:11,380 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:11,820 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:27:11,820 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:27:12,394 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:12,396 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:27:13,090 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:23,296 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:27:23,853 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:27:23,854 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:27:23,873 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:24,541 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:24,543 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:27:25,192 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:38,284 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:27:38,881 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:38,892 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:27:38,894 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:27:39,639 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:39,640 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:27:40,239 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:53,288 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:27:53,839 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:53,863 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:27:53,863 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:27:54,427 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:27:54,429 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:27:55,057 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:05,007 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:28:05,533 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:28:05,533 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:28:05,581 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:06,092 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:06,094 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:28:06,655 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:08,297 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:28:08,853 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:28:08,853 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:28:08,860 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:09,418 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:09,420 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:28:09,998 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:23,295 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:28:23,838 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:23,849 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:28:23,850 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:28:24,431 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:24,433 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:28:24,987 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:38,998 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:28:39,567 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:39,569 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:28:39,570 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:28:40,155 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:40,157 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:28:40,773 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:54,007 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:28:54,573 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:28:54,573 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:28:54,588 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:55,190 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:28:55,192 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:28:55,883 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:04,990 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:29:05,536 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:29:05,537 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:29:05,556 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:06,139 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:06,141 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:29:06,707 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:08,997 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:29:09,552 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:09,553 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:29:09,554 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:29:10,133 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:10,135 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:29:10,677 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:23,795 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:29:24,351 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:29:24,351 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:29:24,388 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:24,936 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:24,937 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:29:25,487 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:38,280 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:29:38,824 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:29:38,824 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:29:38,830 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:39,404 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:39,405 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:29:40,042 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:53,290 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:29:53,839 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:53,847 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:29:53,849 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:29:54,420 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:29:54,422 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:29:54,992 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:04,994 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:30:05,535 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:05,535 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:05,547 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:06,133 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:06,136 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:30:06,732 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:08,278 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:30:08,848 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:08,853 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:08,859 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:09,451 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:09,453 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:30:10,017 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:23,287 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:30:23,854 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:23,857 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:23,873 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:24,496 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:24,497 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:30:25,178 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:29,845 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for BSE:SENSEX
+2026-05-08 15:30:29,877 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Symbol BSE:SENSEX not found in Angel One map or scrip master.
+2026-05-08 15:30:29,878 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching live quote for ^BSESN
+2026-05-08 15:30:29,878 - AlgorithmicTradingSystem.Main - ERROR - Live data failed for BSE:SENSEX. No mock fallback allowed for indices.
+2026-05-08 15:30:38,282 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:30:38,859 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:38,876 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:38,877 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:39,635 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:39,637 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:30:40,345 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:53,285 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:30:53,872 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:53,873 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:53,874 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:54,479 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:54,481 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:30:55,046 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:55,916 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:30:56,580 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:56,581 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:56,629 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:56,630 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:56,659 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:30:56,662 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:30:56,796 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:57,407 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:30:57,410 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:30:58,054 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:00,285 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:31:00,942 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:31:00,943 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:31:00,955 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:31:00,956 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:31:00,970 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:00,980 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:31:00,981 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:31:01,660 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:01,663 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:31:02,239 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:05,001 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
+2026-05-08 15:31:05,562 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:05,568 - AlgorithmicTradingSystem.AngelOneClient - WARNING - Failed to fetch historical data from Angel One for ^NSEI
+2026-05-08 15:31:05,569 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^NSEI (5m) from 2026-05-03 to None
+2026-05-08 15:31:06,280 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:06,282 - AlgorithmicTradingSystem.YFinanceClient - INFO - Fetching historical data for ^BSESN (5m) from 2026-05-03 to None
+2026-05-08 15:31:06,874 - AlgorithmicTradingSystem.AngelOneClient - ERROR - Error fetching market data for option chain: Couldn't parse the JSON response received from the server: b''
+2026-05-08 15:31:15,996 - AlgorithmicTradingSystem.AngelOneClient - INFO - Fetching live quote from Angel One for NIFTY12MAY2624150CE
